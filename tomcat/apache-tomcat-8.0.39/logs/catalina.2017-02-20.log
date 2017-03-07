@@ -1,0 +1,455 @@
+20-Feb-2017 15:37:56.439 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.39
+20-Feb-2017 15:37:56.444 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 9 2016 08:48:39 UTC
+20-Feb-2017 15:37:56.446 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.39.0
+20-Feb-2017 15:37:56.446 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 8.1
+20-Feb-2017 15:37:56.447 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.3
+20-Feb-2017 15:37:56.447 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86
+20-Feb-2017 15:37:56.448 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files (x86)\Java\jdk1.8.0_31\jre
+20-Feb-2017 15:37:56.448 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_31-b13
+20-Feb-2017 15:37:56.449 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+20-Feb-2017 15:37:56.449 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39
+20-Feb-2017 15:37:56.450 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39
+20-Feb-2017 15:37:56.451 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+20-Feb-2017 15:37:56.452 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+20-Feb-2017 15:37:56.454 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\conf\logging.properties
+20-Feb-2017 15:37:56.459 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+20-Feb-2017 15:37:56.461 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\endorsed
+20-Feb-2017 15:37:56.462 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39
+20-Feb-2017 15:37:56.464 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39
+20-Feb-2017 15:37:56.466 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\temp
+20-Feb-2017 15:37:56.467 INFOS [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files (x86)\Java\jdk1.8.0_31\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files\Broadcom\Broadcom 802.11 Network Adapter;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Git\cmd;C:\Users\Tracy\AppData\Local\Microsoft\WindowsApps;;.
+20-Feb-2017 15:37:56.942 INFOS [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+20-Feb-2017 15:37:57.130 INFOS [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+20-Feb-2017 15:37:57.153 INFOS [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+20-Feb-2017 15:37:57.160 INFOS [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+20-Feb-2017 15:37:57.161 INFOS [main] org.apache.catalina.startup.Catalina.load Initialization processed in 2011 ms
+20-Feb-2017 15:37:57.264 INFOS [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service Catalina
+20-Feb-2017 15:37:57.265 INFOS [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.39
+20-Feb-2017 15:37:58.851 INFOS [localhost-startStop-1] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [280] milliseconds.
+20-Feb-2017 15:37:58.923 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\ProjetAW.war de l'application web
+20-Feb-2017 15:37:59.026 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\ProjetAW.war has finished in 103 ms
+20-Feb-2017 15:37:59.028 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\docs de l'application web
+20-Feb-2017 15:37:59.129 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\docs has finished in 100 ms
+20-Feb-2017 15:37:59.129 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\examples de l'application web
+20-Feb-2017 15:38:02.026 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\examples has finished in 2 896 ms
+20-Feb-2017 15:38:02.027 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\host-manager de l'application web
+20-Feb-2017 15:38:02.124 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\host-manager has finished in 97 ms
+20-Feb-2017 15:38:02.125 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\manager de l'application web
+20-Feb-2017 15:38:02.224 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\manager has finished in 100 ms
+20-Feb-2017 15:38:02.236 INFOS [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+20-Feb-2017 15:38:02.261 INFOS [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+20-Feb-2017 15:38:02.266 INFOS [main] org.apache.catalina.startup.Catalina.start Server startup in 5101 ms
+20-Feb-2017 15:39:52.374 INFOS [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Repli (undeploy) de l'application web ayant pour chemin de contexte /ProjetAW
+20-Feb-2017 15:39:52.716 INFOS [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\ProjetAW.war de l'application web
+20-Feb-2017 15:39:53.083 INFOS [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\ProjetAW.war has finished in 367 ms
+20-Feb-2017 15:40:26.390 INFOS [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+20-Feb-2017 15:40:26.392 INFOS [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+20-Feb-2017 15:40:26.455 INFOS [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+20-Feb-2017 15:40:26.506 INFOS [main] org.apache.catalina.core.StandardService.stopInternal Arrêt du service Catalina
+20-Feb-2017 15:40:26.696 INFOS [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+20-Feb-2017 15:40:26.705 INFOS [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+20-Feb-2017 15:40:26.708 INFOS [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+20-Feb-2017 15:40:26.835 INFOS [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+20-Feb-2017 15:40:40.443 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.39
+20-Feb-2017 15:40:40.449 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 9 2016 08:48:39 UTC
+20-Feb-2017 15:40:40.450 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.39.0
+20-Feb-2017 15:40:40.451 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 8.1
+20-Feb-2017 15:40:40.451 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.3
+20-Feb-2017 15:40:40.452 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86
+20-Feb-2017 15:40:40.452 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files (x86)\Java\jdk1.8.0_31\jre
+20-Feb-2017 15:40:40.453 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_31-b13
+20-Feb-2017 15:40:40.453 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+20-Feb-2017 15:40:40.454 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39
+20-Feb-2017 15:40:40.454 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39
+20-Feb-2017 15:40:40.455 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+20-Feb-2017 15:40:40.456 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+20-Feb-2017 15:40:40.458 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\conf\logging.properties
+20-Feb-2017 15:40:40.460 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+20-Feb-2017 15:40:40.465 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\endorsed
+20-Feb-2017 15:40:40.466 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39
+20-Feb-2017 15:40:40.468 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39
+20-Feb-2017 15:40:40.470 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\temp
+20-Feb-2017 15:40:40.472 INFOS [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files (x86)\Java\jdk1.8.0_31\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files\Broadcom\Broadcom 802.11 Network Adapter;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Git\cmd;C:\Users\Tracy\AppData\Local\Microsoft\WindowsApps;;.
+20-Feb-2017 15:40:40.965 INFOS [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+20-Feb-2017 15:40:41.157 INFOS [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+20-Feb-2017 15:40:41.179 INFOS [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+20-Feb-2017 15:40:41.185 INFOS [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+20-Feb-2017 15:40:41.188 INFOS [main] org.apache.catalina.startup.Catalina.load Initialization processed in 2174 ms
+20-Feb-2017 15:40:41.280 INFOS [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service Catalina
+20-Feb-2017 15:40:41.280 INFOS [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.39
+20-Feb-2017 15:40:42.643 INFOS [localhost-startStop-1] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [302] milliseconds.
+20-Feb-2017 15:40:42.718 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\ProjetAW.war de l'application web
+20-Feb-2017 15:40:42.831 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\ProjetAW.war has finished in 113 ms
+20-Feb-2017 15:40:42.834 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\docs de l'application web
+20-Feb-2017 15:40:42.906 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\docs has finished in 71 ms
+20-Feb-2017 15:40:42.907 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\examples de l'application web
+20-Feb-2017 15:40:44.534 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\examples has finished in 1 628 ms
+20-Feb-2017 15:40:44.535 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\host-manager de l'application web
+20-Feb-2017 15:40:44.634 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\host-manager has finished in 99 ms
+20-Feb-2017 15:40:44.635 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\manager de l'application web
+20-Feb-2017 15:40:44.752 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\manager has finished in 117 ms
+20-Feb-2017 15:40:44.766 INFOS [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+20-Feb-2017 15:40:44.794 INFOS [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+20-Feb-2017 15:40:44.801 INFOS [main] org.apache.catalina.startup.Catalina.start Server startup in 3612 ms
+20-Feb-2017 15:43:44.967 INFOS [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Repli (undeploy) de l'application web ayant pour chemin de contexte /ProjetAW
+20-Feb-2017 15:43:45.126 INFOS [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\ProjetAW.war de l'application web
+20-Feb-2017 15:43:45.434 INFOS [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\ProjetAW.war has finished in 308 ms
+20-Feb-2017 15:43:45.503 INFOS [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+20-Feb-2017 15:43:45.505 INFOS [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+20-Feb-2017 15:43:45.565 INFOS [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+20-Feb-2017 15:43:45.619 INFOS [main] org.apache.catalina.core.StandardService.stopInternal Arrêt du service Catalina
+20-Feb-2017 15:43:45.740 INFOS [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+20-Feb-2017 15:43:45.754 INFOS [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+20-Feb-2017 15:43:45.773 INFOS [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+20-Feb-2017 15:43:45.777 INFOS [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+20-Feb-2017 15:43:52.220 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.39
+20-Feb-2017 15:43:52.225 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 9 2016 08:48:39 UTC
+20-Feb-2017 15:43:52.226 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.39.0
+20-Feb-2017 15:43:52.226 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 8.1
+20-Feb-2017 15:43:52.227 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.3
+20-Feb-2017 15:43:52.228 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86
+20-Feb-2017 15:43:52.229 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files (x86)\Java\jdk1.8.0_31\jre
+20-Feb-2017 15:43:52.229 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_31-b13
+20-Feb-2017 15:43:52.230 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+20-Feb-2017 15:43:52.230 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39
+20-Feb-2017 15:43:52.231 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39
+20-Feb-2017 15:43:52.232 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+20-Feb-2017 15:43:52.232 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+20-Feb-2017 15:43:52.234 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\conf\logging.properties
+20-Feb-2017 15:43:52.240 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+20-Feb-2017 15:43:52.241 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\endorsed
+20-Feb-2017 15:43:52.244 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39
+20-Feb-2017 15:43:52.246 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39
+20-Feb-2017 15:43:52.248 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\temp
+20-Feb-2017 15:43:52.252 INFOS [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files (x86)\Java\jdk1.8.0_31\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files\Broadcom\Broadcom 802.11 Network Adapter;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Git\cmd;C:\Users\Tracy\AppData\Local\Microsoft\WindowsApps;;.
+20-Feb-2017 15:43:52.762 INFOS [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+20-Feb-2017 15:43:52.955 INFOS [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+20-Feb-2017 15:43:52.978 INFOS [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+20-Feb-2017 15:43:52.984 INFOS [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+20-Feb-2017 15:43:52.986 INFOS [main] org.apache.catalina.startup.Catalina.load Initialization processed in 2160 ms
+20-Feb-2017 15:43:53.103 INFOS [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service Catalina
+20-Feb-2017 15:43:53.104 INFOS [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.39
+20-Feb-2017 15:43:54.207 INFOS [localhost-startStop-1] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [213] milliseconds.
+20-Feb-2017 15:43:54.259 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\ProjetAW.war de l'application web
+20-Feb-2017 15:43:54.334 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\ProjetAW.war has finished in 74 ms
+20-Feb-2017 15:43:54.336 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\docs de l'application web
+20-Feb-2017 15:43:54.390 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\docs has finished in 54 ms
+20-Feb-2017 15:43:54.390 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\examples de l'application web
+20-Feb-2017 15:43:55.681 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\examples has finished in 1 291 ms
+20-Feb-2017 15:43:55.682 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\host-manager de l'application web
+20-Feb-2017 15:43:55.768 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\host-manager has finished in 87 ms
+20-Feb-2017 15:43:55.768 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\manager de l'application web
+20-Feb-2017 15:43:55.869 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\manager has finished in 101 ms
+20-Feb-2017 15:43:55.882 INFOS [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+20-Feb-2017 15:43:55.906 INFOS [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+20-Feb-2017 15:43:55.912 INFOS [main] org.apache.catalina.startup.Catalina.start Server startup in 2925 ms
+20-Feb-2017 15:53:26.306 INFOS [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Repli (undeploy) de l'application web ayant pour chemin de contexte /ProjetAW
+20-Feb-2017 15:53:26.410 INFOS [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\ProjetAW.war de l'application web
+20-Feb-2017 15:53:26.662 INFOS [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\ProjetAW.war has finished in 252 ms
+20-Feb-2017 15:53:52.211 INFOS [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+20-Feb-2017 15:53:52.213 INFOS [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+20-Feb-2017 15:53:52.274 INFOS [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+20-Feb-2017 15:53:52.330 INFOS [main] org.apache.catalina.core.StandardService.stopInternal Arrêt du service Catalina
+20-Feb-2017 15:53:52.455 INFOS [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+20-Feb-2017 15:53:52.465 INFOS [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+20-Feb-2017 15:53:52.468 INFOS [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+20-Feb-2017 15:53:52.477 INFOS [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+20-Feb-2017 15:53:58.335 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.39
+20-Feb-2017 15:53:58.340 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 9 2016 08:48:39 UTC
+20-Feb-2017 15:53:58.340 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.39.0
+20-Feb-2017 15:53:58.341 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 8.1
+20-Feb-2017 15:53:58.341 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.3
+20-Feb-2017 15:53:58.341 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86
+20-Feb-2017 15:53:58.342 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files (x86)\Java\jdk1.8.0_31\jre
+20-Feb-2017 15:53:58.342 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_31-b13
+20-Feb-2017 15:53:58.343 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+20-Feb-2017 15:53:58.343 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39
+20-Feb-2017 15:53:58.343 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39
+20-Feb-2017 15:53:58.344 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+20-Feb-2017 15:53:58.345 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+20-Feb-2017 15:53:58.347 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\conf\logging.properties
+20-Feb-2017 15:53:58.348 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+20-Feb-2017 15:53:58.352 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\endorsed
+20-Feb-2017 15:53:58.354 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39
+20-Feb-2017 15:53:58.356 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39
+20-Feb-2017 15:53:58.357 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\temp
+20-Feb-2017 15:53:58.358 INFOS [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files (x86)\Java\jdk1.8.0_31\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files\Broadcom\Broadcom 802.11 Network Adapter;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Git\cmd;C:\Users\Tracy\AppData\Local\Microsoft\WindowsApps;;.
+20-Feb-2017 15:53:58.771 INFOS [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+20-Feb-2017 15:53:58.932 INFOS [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+20-Feb-2017 15:53:58.951 INFOS [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+20-Feb-2017 15:53:58.958 INFOS [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+20-Feb-2017 15:53:58.959 INFOS [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1806 ms
+20-Feb-2017 15:53:59.049 INFOS [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service Catalina
+20-Feb-2017 15:53:59.050 INFOS [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.39
+20-Feb-2017 15:54:00.175 INFOS [localhost-startStop-1] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [243] milliseconds.
+20-Feb-2017 15:54:00.234 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\ProjetAW.war de l'application web
+20-Feb-2017 15:54:00.320 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\ProjetAW.war has finished in 85 ms
+20-Feb-2017 15:54:00.322 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\docs de l'application web
+20-Feb-2017 15:54:00.423 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\docs has finished in 101 ms
+20-Feb-2017 15:54:00.424 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\examples de l'application web
+20-Feb-2017 15:54:02.175 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\examples has finished in 1 752 ms
+20-Feb-2017 15:54:02.176 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\host-manager de l'application web
+20-Feb-2017 15:54:02.274 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\host-manager has finished in 99 ms
+20-Feb-2017 15:54:02.274 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\manager de l'application web
+20-Feb-2017 15:54:02.373 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\manager has finished in 99 ms
+20-Feb-2017 15:54:02.385 INFOS [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+20-Feb-2017 15:54:02.409 INFOS [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+20-Feb-2017 15:54:02.415 INFOS [main] org.apache.catalina.startup.Catalina.start Server startup in 3455 ms
+20-Feb-2017 16:12:33.482 INFOS [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+20-Feb-2017 16:12:33.482 INFOS [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+20-Feb-2017 16:12:33.551 INFOS [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+20-Feb-2017 16:12:33.620 INFOS [main] org.apache.catalina.core.StandardService.stopInternal Arrêt du service Catalina
+20-Feb-2017 16:12:33.782 INFOS [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+20-Feb-2017 16:12:33.820 INFOS [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+20-Feb-2017 16:12:33.820 INFOS [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+20-Feb-2017 16:12:33.820 INFOS [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+20-Feb-2017 16:16:42.046 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.39
+20-Feb-2017 16:16:42.062 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 9 2016 08:48:39 UTC
+20-Feb-2017 16:16:42.062 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.39.0
+20-Feb-2017 16:16:42.062 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 8.1
+20-Feb-2017 16:16:42.062 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.3
+20-Feb-2017 16:16:42.062 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86
+20-Feb-2017 16:16:42.062 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files (x86)\Java\jdk1.8.0_31\jre
+20-Feb-2017 16:16:42.062 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_31-b13
+20-Feb-2017 16:16:42.062 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+20-Feb-2017 16:16:42.062 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39
+20-Feb-2017 16:16:42.062 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39
+20-Feb-2017 16:16:42.062 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+20-Feb-2017 16:16:42.062 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+20-Feb-2017 16:16:42.062 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\conf\logging.properties
+20-Feb-2017 16:16:42.062 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+20-Feb-2017 16:16:42.062 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\endorsed
+20-Feb-2017 16:16:42.078 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39
+20-Feb-2017 16:16:42.078 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39
+20-Feb-2017 16:16:42.078 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\temp
+20-Feb-2017 16:16:42.078 INFOS [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files (x86)\Java\jdk1.8.0_31\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files\Broadcom\Broadcom 802.11 Network Adapter;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Git\cmd;C:\Users\Tracy\AppData\Local\Microsoft\WindowsApps;;.
+20-Feb-2017 16:16:42.463 INFOS [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+20-Feb-2017 16:16:42.610 INFOS [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+20-Feb-2017 16:16:42.626 INFOS [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+20-Feb-2017 16:16:42.644 INFOS [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+20-Feb-2017 16:16:42.645 INFOS [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1739 ms
+20-Feb-2017 16:16:42.748 INFOS [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service Catalina
+20-Feb-2017 16:16:42.748 INFOS [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.39
+20-Feb-2017 16:16:44.243 INFOS [localhost-startStop-1] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [319] milliseconds.
+20-Feb-2017 16:16:44.375 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\ProjetAW.war de l'application web
+20-Feb-2017 16:16:44.533 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\ProjetAW.war has finished in 157 ms
+20-Feb-2017 16:16:44.536 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\docs de l'application web
+20-Feb-2017 16:16:44.685 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\docs has finished in 149 ms
+20-Feb-2017 16:16:44.687 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\examples de l'application web
+20-Feb-2017 16:16:47.994 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\examples has finished in 3 306 ms
+20-Feb-2017 16:16:47.995 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\host-manager de l'application web
+20-Feb-2017 16:16:48.147 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\host-manager has finished in 152 ms
+20-Feb-2017 16:16:48.147 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\manager de l'application web
+20-Feb-2017 16:16:48.290 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\manager has finished in 142 ms
+20-Feb-2017 16:16:48.305 INFOS [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+20-Feb-2017 16:16:48.335 INFOS [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+20-Feb-2017 16:16:48.342 INFOS [main] org.apache.catalina.startup.Catalina.start Server startup in 5696 ms
+20-Feb-2017 16:18:40.641 INFOS [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+20-Feb-2017 16:18:40.642 INFOS [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+20-Feb-2017 16:18:40.704 INFOS [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+20-Feb-2017 16:18:40.709 INFOS [main] org.apache.catalina.core.StandardService.stopInternal Arrêt du service Catalina
+20-Feb-2017 16:18:40.878 INFOS [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+20-Feb-2017 16:18:40.976 INFOS [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+20-Feb-2017 16:18:40.978 INFOS [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+20-Feb-2017 16:18:40.981 INFOS [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+20-Feb-2017 16:18:45.234 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.39
+20-Feb-2017 16:18:45.240 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 9 2016 08:48:39 UTC
+20-Feb-2017 16:18:45.241 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.39.0
+20-Feb-2017 16:18:45.241 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 8.1
+20-Feb-2017 16:18:45.242 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.3
+20-Feb-2017 16:18:45.242 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86
+20-Feb-2017 16:18:45.243 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files (x86)\Java\jdk1.8.0_31\jre
+20-Feb-2017 16:18:45.243 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_31-b13
+20-Feb-2017 16:18:45.244 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+20-Feb-2017 16:18:45.244 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39
+20-Feb-2017 16:18:45.244 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39
+20-Feb-2017 16:18:45.245 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+20-Feb-2017 16:18:45.246 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+20-Feb-2017 16:18:45.248 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\conf\logging.properties
+20-Feb-2017 16:18:45.249 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+20-Feb-2017 16:18:45.254 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\endorsed
+20-Feb-2017 16:18:45.255 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39
+20-Feb-2017 16:18:45.257 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39
+20-Feb-2017 16:18:45.258 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\temp
+20-Feb-2017 16:18:45.260 INFOS [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files (x86)\Java\jdk1.8.0_31\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files\Broadcom\Broadcom 802.11 Network Adapter;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Git\cmd;C:\Users\Tracy\AppData\Local\Microsoft\WindowsApps;;.
+20-Feb-2017 16:18:45.646 INFOS [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+20-Feb-2017 16:18:45.801 INFOS [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+20-Feb-2017 16:18:45.820 INFOS [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+20-Feb-2017 16:18:45.826 INFOS [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+20-Feb-2017 16:18:45.827 INFOS [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1755 ms
+20-Feb-2017 16:18:45.900 INFOS [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service Catalina
+20-Feb-2017 16:18:45.901 INFOS [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.39
+20-Feb-2017 16:18:47.063 INFOS [localhost-startStop-1] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [241] milliseconds.
+20-Feb-2017 16:18:47.123 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\ProjetAW.war de l'application web
+20-Feb-2017 16:18:47.236 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\ProjetAW.war has finished in 113 ms
+20-Feb-2017 16:18:47.238 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\docs de l'application web
+20-Feb-2017 16:18:47.294 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\docs has finished in 56 ms
+20-Feb-2017 16:18:47.295 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\examples de l'application web
+20-Feb-2017 16:18:48.258 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\examples has finished in 963 ms
+20-Feb-2017 16:18:48.259 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\host-manager de l'application web
+20-Feb-2017 16:18:48.369 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\host-manager has finished in 110 ms
+20-Feb-2017 16:18:48.370 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\manager de l'application web
+20-Feb-2017 16:18:48.458 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\manager has finished in 87 ms
+20-Feb-2017 16:18:48.472 INFOS [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+20-Feb-2017 16:18:48.496 INFOS [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+20-Feb-2017 16:18:48.503 INFOS [main] org.apache.catalina.startup.Catalina.start Server startup in 2675 ms
+20-Feb-2017 16:19:29.000 INFOS [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Repli (undeploy) de l'application web ayant pour chemin de contexte /ProjetAW
+20-Feb-2017 16:24:59.487 INFOS [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\ProjetAW.war de l'application web
+20-Feb-2017 16:24:59.619 INFOS [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\ProjetAW.war has finished in 131 ms
+20-Feb-2017 16:25:03.077 INFOS [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+20-Feb-2017 16:25:03.079 INFOS [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+20-Feb-2017 16:25:03.140 INFOS [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+20-Feb-2017 16:25:03.198 INFOS [main] org.apache.catalina.core.StandardService.stopInternal Arrêt du service Catalina
+20-Feb-2017 16:25:03.346 INFOS [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+20-Feb-2017 16:25:03.357 INFOS [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+20-Feb-2017 16:25:03.441 INFOS [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+20-Feb-2017 16:25:03.444 INFOS [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+20-Feb-2017 16:25:06.734 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.39
+20-Feb-2017 16:25:06.739 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 9 2016 08:48:39 UTC
+20-Feb-2017 16:25:06.740 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.39.0
+20-Feb-2017 16:25:06.740 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 8.1
+20-Feb-2017 16:25:06.741 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.3
+20-Feb-2017 16:25:06.741 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86
+20-Feb-2017 16:25:06.741 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files (x86)\Java\jdk1.8.0_31\jre
+20-Feb-2017 16:25:06.742 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_31-b13
+20-Feb-2017 16:25:06.742 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+20-Feb-2017 16:25:06.742 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39
+20-Feb-2017 16:25:06.743 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39
+20-Feb-2017 16:25:06.744 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+20-Feb-2017 16:25:06.744 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+20-Feb-2017 16:25:06.746 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\conf\logging.properties
+20-Feb-2017 16:25:06.747 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+20-Feb-2017 16:25:06.752 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\endorsed
+20-Feb-2017 16:25:06.753 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39
+20-Feb-2017 16:25:06.755 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39
+20-Feb-2017 16:25:06.756 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\temp
+20-Feb-2017 16:25:06.757 INFOS [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files (x86)\Java\jdk1.8.0_31\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files\Broadcom\Broadcom 802.11 Network Adapter;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Git\cmd;C:\Users\Tracy\AppData\Local\Microsoft\WindowsApps;;.
+20-Feb-2017 16:25:07.129 INFOS [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+20-Feb-2017 16:25:07.281 INFOS [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+20-Feb-2017 16:25:07.300 INFOS [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+20-Feb-2017 16:25:07.306 INFOS [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+20-Feb-2017 16:25:07.307 INFOS [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1663 ms
+20-Feb-2017 16:25:07.381 INFOS [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service Catalina
+20-Feb-2017 16:25:07.382 INFOS [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.39
+20-Feb-2017 16:25:08.537 INFOS [localhost-startStop-1] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [247] milliseconds.
+20-Feb-2017 16:25:08.597 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\ProjetAW.war de l'application web
+20-Feb-2017 16:25:08.682 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\ProjetAW.war has finished in 85 ms
+20-Feb-2017 16:25:08.685 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\docs de l'application web
+20-Feb-2017 16:25:08.773 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\docs has finished in 89 ms
+20-Feb-2017 16:25:08.774 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\examples de l'application web
+20-Feb-2017 16:25:10.240 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\examples has finished in 1 465 ms
+20-Feb-2017 16:25:10.240 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\host-manager de l'application web
+20-Feb-2017 16:25:10.317 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\host-manager has finished in 77 ms
+20-Feb-2017 16:25:10.318 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\manager de l'application web
+20-Feb-2017 16:25:10.398 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\manager has finished in 80 ms
+20-Feb-2017 16:25:10.412 INFOS [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+20-Feb-2017 16:25:10.436 INFOS [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+20-Feb-2017 16:25:10.443 INFOS [main] org.apache.catalina.startup.Catalina.start Server startup in 3133 ms
+20-Feb-2017 16:30:30.683 INFOS [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Repli (undeploy) de l'application web ayant pour chemin de contexte /ProjetAW
+20-Feb-2017 16:30:30.767 INFOS [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\ProjetAW.war de l'application web
+20-Feb-2017 16:30:30.883 INFOS [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\ProjetAW.war has finished in 116 ms
+20-Feb-2017 16:31:07.658 INFOS [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+20-Feb-2017 16:31:07.659 INFOS [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+20-Feb-2017 16:31:07.725 INFOS [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+20-Feb-2017 16:31:07.781 INFOS [main] org.apache.catalina.core.StandardService.stopInternal Arrêt du service Catalina
+20-Feb-2017 16:31:07.923 INFOS [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+20-Feb-2017 16:31:07.951 INFOS [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+20-Feb-2017 16:31:07.955 INFOS [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+20-Feb-2017 16:31:07.962 INFOS [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+20-Feb-2017 16:31:12.569 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.39
+20-Feb-2017 16:31:12.574 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 9 2016 08:48:39 UTC
+20-Feb-2017 16:31:12.574 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.39.0
+20-Feb-2017 16:31:12.575 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 8.1
+20-Feb-2017 16:31:12.576 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.3
+20-Feb-2017 16:31:12.576 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86
+20-Feb-2017 16:31:12.576 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files (x86)\Java\jdk1.8.0_31\jre
+20-Feb-2017 16:31:12.577 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_31-b13
+20-Feb-2017 16:31:12.577 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+20-Feb-2017 16:31:12.578 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39
+20-Feb-2017 16:31:12.578 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39
+20-Feb-2017 16:31:12.579 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+20-Feb-2017 16:31:12.579 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+20-Feb-2017 16:31:12.581 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\conf\logging.properties
+20-Feb-2017 16:31:12.583 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+20-Feb-2017 16:31:12.586 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\endorsed
+20-Feb-2017 16:31:12.588 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39
+20-Feb-2017 16:31:12.590 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39
+20-Feb-2017 16:31:12.591 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\temp
+20-Feb-2017 16:31:12.593 INFOS [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files (x86)\Java\jdk1.8.0_31\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files\Broadcom\Broadcom 802.11 Network Adapter;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Git\cmd;C:\Users\Tracy\AppData\Local\Microsoft\WindowsApps;;.
+20-Feb-2017 16:31:12.967 INFOS [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+20-Feb-2017 16:31:13.114 INFOS [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+20-Feb-2017 16:31:13.134 INFOS [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+20-Feb-2017 16:31:13.140 INFOS [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+20-Feb-2017 16:31:13.141 INFOS [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1639 ms
+20-Feb-2017 16:31:13.214 INFOS [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service Catalina
+20-Feb-2017 16:31:13.215 INFOS [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.39
+20-Feb-2017 16:31:14.408 INFOS [localhost-startStop-1] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [241] milliseconds.
+20-Feb-2017 16:31:14.494 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\ProjetAW.war de l'application web
+20-Feb-2017 16:31:14.596 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\ProjetAW.war has finished in 102 ms
+20-Feb-2017 16:31:14.599 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\docs de l'application web
+20-Feb-2017 16:31:14.672 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\docs has finished in 73 ms
+20-Feb-2017 16:31:14.673 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\examples de l'application web
+20-Feb-2017 16:31:15.619 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\examples has finished in 945 ms
+20-Feb-2017 16:31:15.619 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\host-manager de l'application web
+20-Feb-2017 16:31:15.722 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\host-manager has finished in 102 ms
+20-Feb-2017 16:31:15.722 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\manager de l'application web
+20-Feb-2017 16:31:15.783 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\manager has finished in 61 ms
+20-Feb-2017 16:31:15.794 INFOS [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+20-Feb-2017 16:31:15.816 INFOS [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+20-Feb-2017 16:31:15.822 INFOS [main] org.apache.catalina.startup.Catalina.start Server startup in 2679 ms
+20-Feb-2017 16:32:05.833 INFOS [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\design de l'application web
+20-Feb-2017 16:32:05.886 INFOS [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\design has finished in 53 ms
+20-Feb-2017 16:32:45.914 INFOS [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Repli (undeploy) de l'application web ayant pour chemin de contexte /ProjetAW
+20-Feb-2017 16:32:45.967 INFOS [localhost-startStop-3] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\ProjetAW.war de l'application web
+20-Feb-2017 16:32:46.078 INFOS [localhost-startStop-3] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\ProjetAW.war has finished in 111 ms
+20-Feb-2017 16:32:52.460 INFOS [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+20-Feb-2017 16:32:52.476 INFOS [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+20-Feb-2017 16:32:52.539 INFOS [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+20-Feb-2017 16:32:52.539 INFOS [main] org.apache.catalina.core.StandardService.stopInternal Arrêt du service Catalina
+20-Feb-2017 16:32:52.708 INFOS [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+20-Feb-2017 16:32:52.708 INFOS [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+20-Feb-2017 16:32:52.724 INFOS [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+20-Feb-2017 16:32:52.724 INFOS [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+20-Feb-2017 16:32:56.261 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.39
+20-Feb-2017 16:32:56.266 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 9 2016 08:48:39 UTC
+20-Feb-2017 16:32:56.266 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.39.0
+20-Feb-2017 16:32:56.266 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 8.1
+20-Feb-2017 16:32:56.266 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.3
+20-Feb-2017 16:32:56.266 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86
+20-Feb-2017 16:32:56.266 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files (x86)\Java\jdk1.8.0_31\jre
+20-Feb-2017 16:32:56.266 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_31-b13
+20-Feb-2017 16:32:56.266 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+20-Feb-2017 16:32:56.266 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39
+20-Feb-2017 16:32:56.266 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39
+20-Feb-2017 16:32:56.266 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+20-Feb-2017 16:32:56.266 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+20-Feb-2017 16:32:56.266 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\conf\logging.properties
+20-Feb-2017 16:32:56.266 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+20-Feb-2017 16:32:56.266 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\endorsed
+20-Feb-2017 16:32:56.266 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39
+20-Feb-2017 16:32:56.266 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39
+20-Feb-2017 16:32:56.266 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\temp
+20-Feb-2017 16:32:56.282 INFOS [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files (x86)\Java\jdk1.8.0_31\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files\Broadcom\Broadcom 802.11 Network Adapter;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Git\cmd;C:\Users\Tracy\AppData\Local\Microsoft\WindowsApps;;.
+20-Feb-2017 16:32:56.645 INFOS [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+20-Feb-2017 16:32:56.799 INFOS [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+20-Feb-2017 16:32:56.815 INFOS [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+20-Feb-2017 16:32:56.830 INFOS [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+20-Feb-2017 16:32:56.830 INFOS [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1708 ms
+20-Feb-2017 16:32:56.899 INFOS [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service Catalina
+20-Feb-2017 16:32:56.899 INFOS [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.39
+20-Feb-2017 16:32:58.048 INFOS [localhost-startStop-1] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [248] milliseconds.
+20-Feb-2017 16:32:58.133 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\ProjetAW.war de l'application web
+20-Feb-2017 16:32:58.233 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\ProjetAW.war has finished in 100 ms
+20-Feb-2017 16:32:58.249 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\design de l'application web
+20-Feb-2017 16:32:58.302 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\design has finished in 53 ms
+20-Feb-2017 16:32:58.302 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\docs de l'application web
+20-Feb-2017 16:32:58.367 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\docs has finished in 65 ms
+20-Feb-2017 16:32:58.368 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\examples de l'application web
+20-Feb-2017 16:32:59.248 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\examples has finished in 880 ms
+20-Feb-2017 16:32:59.248 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\host-manager de l'application web
+20-Feb-2017 16:32:59.348 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\host-manager has finished in 100 ms
+20-Feb-2017 16:32:59.348 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\manager de l'application web
+20-Feb-2017 16:32:59.411 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\tomcat8\apache-tomcat-8.0.39\apache-tomcat-8.0.39\webapps\manager has finished in 63 ms
+20-Feb-2017 16:32:59.411 INFOS [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+20-Feb-2017 16:32:59.433 INFOS [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+20-Feb-2017 16:32:59.448 INFOS [main] org.apache.catalina.startup.Catalina.start Server startup in 2616 ms

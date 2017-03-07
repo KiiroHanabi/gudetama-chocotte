@@ -122,10 +122,8 @@
 
       <Host name="localhost"  appBase="webapps"
             unpackWARs="true" autoDeploy="true">
-			<Context docBase="ProjetAW" path="">
+			<Context docBase="gudetama-chocotte" path="">
 			</Context>
-			<!--<Context docBase="gudetama-chocotte" path="">
-			</Context>-->
 
         <!-- SingleSignOn valve, share authentication between web applications
              Documentation at: /docs/config/valve.html -->

@@ -11,14 +11,26 @@
 		<!-- <servlet-name>babyServlet</servlet-name>
 		<servlet-class>babyServlet</servlet-class> -->
 	</servlet>
+	
 	<servlet-mapping>
 		<servlet-name>cs</servlet-name>
 		<url-pattern>/controleur</url-pattern>
 		<!-- <servlet-name>babyServlet</servlet-name>
 		<url-pattern>/rene</url-pattern> -->
 	</servlet-mapping>
+	
 	<servlet-mapping>
 		<servlet-name>cs</servlet-name>
 		<url-pattern>*.php</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>controleurservletvideo</servlet-name>
+		<servlet-class>Web.ControleurServletVideo</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>controleurservletvideo</servlet-name>
+		<url-pattern>/controleurservletvideo</url-pattern>
 	</servlet-mapping>
 </web-app>

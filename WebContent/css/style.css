@@ -1,0 +1,17 @@
+<div{
+	border:1Px dotted gray;
+	padding: 10px;
+	margin: 10px;
+}
+.table1 th{
+	border:1Px dotted gray;
+	padding: 10px;
+	margin: 10px;
+	backgroud: pink;
+}
+.table1 td{
+	border:1Px dotted gray;
+	padding: 10px;
+	margin: 10px;
+	backgroud: white;
+}

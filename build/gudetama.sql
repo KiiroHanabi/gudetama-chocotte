@@ -3,11 +3,10 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Mar 07 Mars 2017 à 17:40
+-- Généré le :  Sam 11 Mars 2017 à 17:27
 -- Version du serveur :  5.6.17
 -- Version de PHP :  5.5.12
 
-SET FOREIGN_KEY_CHECKS=0;
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
@@ -45,12 +44,31 @@ CREATE TABLE IF NOT EXISTS `traduction` (
   `idTraduction` int(11) NOT NULL AUTO_INCREMENT,
   `idUtilisateur` int(11) NOT NULL,
   `urlTraduction` varchar(45) NOT NULL,
-  `votePositif` int(11) NOT NULL,
-  `voteNegatif` int(11) NOT NULL,
-  `totalVote` int(11) NOT NULL,
+  `votePositif` int(11) NOT NULL DEFAULT '0',
+  `voteNegatif` int(11) NOT NULL DEFAULT '0',
+  `totalVote` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`idTraduction`),
   KEY `idUtilisateur` (`idUtilisateur`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=2 ;
+
+--
+-- Contenu de la table `traduction`
+--
+
+INSERT INTO `traduction` (`idTraduction`, `idUtilisateur`, `urlTraduction`, `votePositif`, `voteNegatif`, `totalVote`) VALUES
+(1, 1, 'moka', 12, 4, 8);
+
+--
+-- Déclencheurs `traduction`
+--
+DROP TRIGGER IF EXISTS `calculTotalVotes`;
+DELIMITER //
+CREATE TRIGGER `calculTotalVotes` BEFORE UPDATE ON `traduction`
+ FOR EACH ROW BEGIN
+SET new.totalVote = new.votePositif-new.voteNegatif;
+END
+//
+DELIMITER ;
 
 -- --------------------------------------------------------
 
@@ -72,12 +90,13 @@ CREATE TABLE IF NOT EXISTS `utilisateur` (
 --
 
 INSERT INTO `utilisateur` (`idUtilisateur`, `login`, `email`, `mdp`, `statut`) VALUES
-(1, 'Minet', 'minet@licocorne.fr', 'angrydoge', 'Admin'),
-(2, 'Tracytto', 'minetto@licocornetto.frtto', 'tto', 'Admin'),
-(3, 'paul', 'paul@appelerpaul.fr', 'booya', 'Membre'),
-(4, 'Martin', 'fre@po', 'f', 'Membre'),
-(5, 'paulette', '45c84a5f3ea89f2c6143b64d88355e6cf62255a3', 'pauletteestbelle', 'Membre'),
-(6, 'pou', '8b388e93f679ab54cbfba12688dc17f88760bff2', 'c0168fe6044f2b7aa04505ac25f5eac614bd35e1', 'Membre');
+(1, 'Minet', '16d3341d3c7d09075c5d2204b94a4ef27f1f8a6e', 'f91a8ee646a277a2f1359709604b99c1b32d9f24', 'Admin'),
+(2, 'DogeLord', '558df618987c7202326221628bd07427637f33e1', '7429092da8fd5fb02a68689f184258436db51a0c', 'Admin'),
+(3, 'Licorne', '41f2a6ee66ff6e0cd7d6bbc4c6086ec8b498309d', 'f1eb08c4e3f8a5ab5761723b1210ad4c30e41dc7', 'Admin'),
+(4, 'Paul', '14a9adfe22557faba7f291923b3673da5e9fc446', '510826e6abbcf0e6ffef30f1e6b15c318e275cf1', 'Membre'),
+(5, 'SpongeBob', 'a09bde7dec17828bc87057ba6555bbff5ff2387f', '45a35463c3dd5a39cf170630510175bf7249a2ba', 'Membre'),
+(6, 'Steven', '3db7328c914058bb7ac583cf44054556fa6a4b47', 'f725d6d76d5958fe3e0a0b263898ff29907f35f6', 'Membre'),
+(7, 'Garnet', 'eb41bd336a942ceb8a9853e67c81b003ea2f764f', '88efff4015896fbc096127ab09a1744b79ae95d3', 'Membre');
 
 --
 -- Déclencheurs `utilisateur`
@@ -105,13 +124,25 @@ CREATE TABLE IF NOT EXISTS `video` (
   `idVideo` int(11) NOT NULL AUTO_INCREMENT,
   `titreVideo` varchar(45) NOT NULL,
   `dateVideo` date NOT NULL,
-  `urlVideo` varchar(45) NOT NULL,
+  `urlVideo` varchar(100) NOT NULL,
   `dureeVideo` time NOT NULL,
-  `idTraduction` int(11) NOT NULL,
+  `idTraduction` int(11) DEFAULT NULL,
   `estTraduit` tinyint(1) NOT NULL,
+  `estFav` tinyint(4) NOT NULL DEFAULT '0',
   PRIMARY KEY (`idVideo`),
   KEY `idTraduction` (`idTraduction`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=6 ;
+
+--
+-- Contenu de la table `video`
+--
+
+INSERT INTO `video` (`idVideo`, `titreVideo`, `dateVideo`, `urlVideo`, `dureeVideo`, `idTraduction`, `estTraduit`, `estFav`) VALUES
+(1, 'ぐでたまショートアニメ 第730話「フライング」（36放送）', '2017-03-05', 'C:\\Users\\Jojo\\Desktop\\VidGudetama\\ぐでたまショートアニメ 第730話「フライング」（36放送）.mp4', '00:01:00', NULL, 0, 0),
+(2, 'ぐでたまショートアニメ 第731話「ぐでたま名言集」（37放送）', '2017-03-06', 'C:\\Users\\Jojo\\Desktop\\VidGudetama\\ぐでたまショートアニメ 第731話「ぐでたま名言集」（37放送）.mp4', '00:01:00', NULL, 0, 0),
+(3, 'ぐでたまショートアニメ 第732話「黄身の名は」（38放送）', '2017-03-07', 'C:\\Users\\Jojo\\Desktop\\VidGudetama\\ぐでたまショートアニメ 第732話「黄身の名は」（38放送）.mp4', '00:01:00', NULL, 0, 0),
+(4, 'ぐでたまショートアニメ 第733話「もしもぐでたま 声優」（39放送）', '2017-03-08', 'C:\\Users\\Jojo\\Desktop\\VidGudetama\\ぐでたまショートアニメ 第733話「もしもぐでたま 声優」（39放送）.mp4', '00:01:00', NULL, 0, 0),
+(5, 'ぐでたまショートアニメ 第734話「しりに…」（310放送）', '2017-03-09', 'C:\\Users\\Jojo\\Desktop\\VidGudetama\\ぐでたまショートアニメ 第734話「しりに…」（310放送）.mp4', '00:01:00', NULL, 0, 0);
 
 --
 -- Contraintes pour les tables exportées
@@ -134,7 +165,6 @@ ALTER TABLE `traduction`
 --
 ALTER TABLE `video`
   ADD CONSTRAINT `fk_video_idTraduction` FOREIGN KEY (`idTraduction`) REFERENCES `traduction` (`idTraduction`) ON DELETE CASCADE ON UPDATE CASCADE;
-SET FOREIGN_KEY_CHECKS=1;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

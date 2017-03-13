@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Dim 12 Mars 2017 à 09:14
+-- Généré le :  Lun 13 Mars 2017 à 18:09
 -- Version du serveur :  5.6.17
 -- Version de PHP :  5.5.12
 
@@ -19,6 +19,8 @@ SET time_zone = "+00:00";
 --
 -- Base de données :  `gudetama`
 --
+CREATE DATABASE IF NOT EXISTS `gudetama` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `gudetama`;
 
 -- --------------------------------------------------------
 
@@ -26,6 +28,7 @@ SET time_zone = "+00:00";
 -- Structure de la table `favoris`
 --
 
+DROP TABLE IF EXISTS `favoris`;
 CREATE TABLE IF NOT EXISTS `favoris` (
   `idUtilisateur` int(11) NOT NULL,
   `idVideo` int(11) NOT NULL,
@@ -36,23 +39,10 @@ CREATE TABLE IF NOT EXISTS `favoris` (
 -- --------------------------------------------------------
 
 --
--- Structure de la table `motcle`
---
-
-CREATE TABLE IF NOT EXISTS `motcle` (
-  `idMotcle` int(11) NOT NULL AUTO_INCREMENT,
-  `idVideo` int(11) NOT NULL,
-  `mot` varchar(45) NOT NULL,
-  PRIMARY KEY (`idMotcle`),
-  KEY `idVideo` (`idVideo`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
 -- Structure de la table `traduction`
 --
 
+DROP TABLE IF EXISTS `traduction`;
 CREATE TABLE IF NOT EXISTS `traduction` (
   `idTraduction` int(11) NOT NULL AUTO_INCREMENT,
   `idUtilisateur` int(11) NOT NULL,
@@ -63,13 +53,6 @@ CREATE TABLE IF NOT EXISTS `traduction` (
   PRIMARY KEY (`idTraduction`),
   KEY `idUtilisateur` (`idUtilisateur`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=2 ;
-
---
--- Contenu de la table `traduction`
---
-
-INSERT INTO `traduction` (`idTraduction`, `idUtilisateur`, `urlTraduction`, `votePositif`, `voteNegatif`, `totalVote`) VALUES
-(1, 1, 'moka', 12, 4, 8);
 
 --
 -- Déclencheurs `traduction`
@@ -89,6 +72,7 @@ DELIMITER ;
 -- Structure de la table `utilisateur`
 --
 
+DROP TABLE IF EXISTS `utilisateur`;
 CREATE TABLE IF NOT EXISTS `utilisateur` (
   `idUtilisateur` int(11) NOT NULL AUTO_INCREMENT,
   `login` varchar(45) NOT NULL,
@@ -133,6 +117,7 @@ DELIMITER ;
 -- Structure de la table `video`
 --
 
+DROP TABLE IF EXISTS `video`;
 CREATE TABLE IF NOT EXISTS `video` (
   `idVideo` int(11) NOT NULL AUTO_INCREMENT,
   `titreVideo` varchar(45) NOT NULL,
@@ -140,8 +125,6 @@ CREATE TABLE IF NOT EXISTS `video` (
   `urlVideo` varchar(100) NOT NULL,
   `dureeVideo` time NOT NULL,
   `idTraduction` int(11) DEFAULT NULL,
-  `estTraduit` tinyint(1) NOT NULL,
-  `estFav` tinyint(4) NOT NULL DEFAULT '0',
   PRIMARY KEY (`idVideo`),
   KEY `idTraduction` (`idTraduction`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=6 ;
@@ -150,12 +133,12 @@ CREATE TABLE IF NOT EXISTS `video` (
 -- Contenu de la table `video`
 --
 
-INSERT INTO `video` (`idVideo`, `titreVideo`, `dateVideo`, `urlVideo`, `dureeVideo`, `idTraduction`, `estTraduit`, `estFav`) VALUES
-(1, 'ぐでたまショートアニメ 第730話「フライング」（36放送）', '2017-03-05', 'C:\\Users\\Jojo\\Desktop\\VidGudetama\\ぐでたまショートアニメ 第730話「フライング」（36放送）.mp4', '00:01:00', NULL, 0, 0),
-(2, 'ぐでたまショートアニメ 第731話「ぐでたま名言集」（37放送）', '2017-03-06', 'C:\\Users\\Jojo\\Desktop\\VidGudetama\\ぐでたまショートアニメ 第731話「ぐでたま名言集」（37放送）.mp4', '00:01:00', NULL, 0, 0),
-(3, 'ぐでたまショートアニメ 第732話「黄身の名は」（38放送）', '2017-03-07', 'C:\\Users\\Jojo\\Desktop\\VidGudetama\\ぐでたまショートアニメ 第732話「黄身の名は」（38放送）.mp4', '00:01:00', NULL, 0, 0),
-(4, 'ぐでたまショートアニメ 第733話「もしもぐでたま 声優」（39放送）', '2017-03-08', 'C:\\Users\\Jojo\\Desktop\\VidGudetama\\ぐでたまショートアニメ 第733話「もしもぐでたま 声優」（39放送）.mp4', '00:01:00', NULL, 0, 0),
-(5, 'ぐでたまショートアニメ 第734話「しりに…」（310放送）', '2017-03-09', 'C:\\Users\\Jojo\\Desktop\\VidGudetama\\ぐでたまショートアニメ 第734話「しりに…」（310放送）.mp4', '00:01:00', NULL, 0, 0);
+INSERT INTO `video` (`idVideo`, `titreVideo`, `dateVideo`, `urlVideo`, `dureeVideo`, `idTraduction`) VALUES
+(1, 'ぐでたまショートアニメ 第730話「フライング」（36放送）', '2017-03-05', 'C:\\Users\\Jojo\\Desktop\\VidGudetama\\ぐでたまショートアニメ 第730話「フライング」（36放送）.mp4', '00:01:00', NULL),
+(2, 'ぐでたまショートアニメ 第731話「ぐでたま名言集」（37放送）', '2017-03-06', 'C:\\Users\\Jojo\\Desktop\\VidGudetama\\ぐでたまショートアニメ 第731話「ぐでたま名言集」（37放送）.mp4', '00:01:00', NULL),
+(3, 'ぐでたまショートアニメ 第732話「黄身の名は」（38放送）', '2017-03-07', 'C:\\Users\\Jojo\\Desktop\\VidGudetama\\ぐでたまショートアニメ 第732話「黄身の名は」（38放送）.mp4', '00:01:00', NULL),
+(4, 'ぐでたまショートアニメ 第733話「もしもぐでたま 声優」（39放送）', '2017-03-08', 'C:\\Users\\Jojo\\Desktop\\VidGudetama\\ぐでたまショートアニメ 第733話「もしもぐでたま 声優」（39放送）.mp4', '00:01:00', NULL),
+(5, 'ぐでたまショートアニメ 第734話「しりに…」（310放送）', '2017-03-09', 'C:\\Users\\Jojo\\Desktop\\VidGudetama\\ぐでたまショートアニメ 第734話「しりに…」（310放送）.mp4', '00:01:00', NULL);
 
 --
 -- Contraintes pour les tables exportées
@@ -167,24 +150,6 @@ INSERT INTO `video` (`idVideo`, `titreVideo`, `dateVideo`, `urlVideo`, `dureeVid
 ALTER TABLE `favoris`
   ADD CONSTRAINT `fk_favoris_idVideo` FOREIGN KEY (`idVideo`) REFERENCES `video` (`idVideo`),
   ADD CONSTRAINT `fk_favoris_idUtilisateur` FOREIGN KEY (`idUtilisateur`) REFERENCES `utilisateur` (`idUtilisateur`);
-
---
--- Contraintes pour la table `motcle`
---
-ALTER TABLE `motcle`
-  ADD CONSTRAINT `fk_motcle_idVideo` FOREIGN KEY (`idVideo`) REFERENCES `video` (`idVideo`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Contraintes pour la table `traduction`
---
-ALTER TABLE `traduction`
-  ADD CONSTRAINT `fk_traduction_idUtilisateur` FOREIGN KEY (`idUtilisateur`) REFERENCES `utilisateur` (`idUtilisateur`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Contraintes pour la table `video`
---
-ALTER TABLE `video`
-  ADD CONSTRAINT `fk_video_idTraduction` FOREIGN KEY (`idTraduction`) REFERENCES `traduction` (`idTraduction`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

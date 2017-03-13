@@ -3,8 +3,8 @@
 	<head>
 		<!-- Ce site a été créé avec http://www.creer-son-website.fr/ -->
 		<title>GudetamaFrance!</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=ASCII" />
-		<link rel="stylesheet" media="screen" type="text/css" title="Design" href="css/design/style2.css" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" media="screen" type="text/css" title="Design" href="design/style.css" />
 		<!--[if IE 6]><link rel="stylesheet" media="screen" type="text/css" title="Design" href="design/ie6.css" /> <![endif]-->
 	</head>
 
@@ -15,7 +15,7 @@
 			<!-- Début du menu horizontal -->
 			<ul id="MH">
 				<li><a href="index.jsp">Accueil</a></li>
-				<li><a href="inscription.jsp">Inscription</a></li>
+				<li><a href="connexion.jsp">Connexion</a></li>
 				<!--<li><a href="#">Menu 3</a></li>
 				<li><a href="#">Menu 4</a></li>-->
 			</ul>
@@ -23,60 +23,43 @@
 
 			<div id="banniere"><div id="logo"></div></div>
 
-<!--			<div id="conteneur_2">
--->
+			<div id="conteneur_2">
+
 				<div id="corps">
 
 					<!-- Début du menu vertical -->
 					<div id="MV">
-						<div class="en_tete_MV">Connexion</div>
-							<p>Email</p><textarea rows=1 cols=20></textarea>
-							<p>Mot de passe</p><textarea rows=1 cols=20></textarea>
-							</br>
-							</br>
-							</br>
-							<button><a href="accueil.jsp">Se connecter</a></button>
-							</br>
-							</br>
-							</br>
-							</br>
-							</br>
-							</br>
-							</br>
-							</br>
-							</br>
-							</br>
-							</br>
-							</br>
-							</br>
-							</br>
-							</br>
-							<!-- <button style="background-color : #505050; font-size : 16px;"><a href="inscription.jsp">Pas encore inscrit ? Cliquez ici !!</a></button>-->
-<!--						<a class="lien_MV" href="video1.html">Noël 2016</a>
-							<a class="lien_MV">Eté 2016</a>
-							<a class="lien_MV">Noël 2015</a>
-							<a class="lien_MV">Eté 2015</a>
+						<div class="en_tete_MV">Séries</div>
+							<a class="lien_MV" href="video1.html">Saint-Valentin 2017</a>
+							<a class="lien_MV" href="video2.html">Hiver 2017</a>
+							<a class="lien_MV">Noël 2016</a>
+							<a class="lien_MV">Hiver 2016</a>
 							<!--<a class="lien_MV">Menu 5</a>
 							<a class="lien_MV">Menu 6</a>-->
 						<div class="bottom_MV"></div>
-<!--						<div class="marge_MV"></div>
+						<div class="marge_MV"></div>
 						<div class="en_tete_MV">Autres</div>
 							<a class="lien_MV">Nouveautés</a>
+							<a class="lien_MV">Toutes les Vidéos</a>
 							<a class="lien_MV">Fan pages</a>
-							<a class="lien_MV">Qui sommes-nous</a>
-							<!--<a class="lien_MV">Menu 4</a>
-							<a class="lien_MV">Menu 5</a>
-							<a class="lien_MV">Menu 6</a>
-						<div class="bottom_MV"></div>-->
+							<a class="lien_MV" href="quisommesnous.html">Qui sommes-nous</a>
+							<!--<a class="lien_MV">Menu 5</a>
+							<a class="lien_MV">Menu 6</a>-->
+						<div class="bottom_MV"></div>
 						<div class="marge_MV"></div>
 					</div>
 					<!-- Fin du menu vertical -->
 
 					<div id="texte"><div id="overflow">
+
 						<!-- Début de la zone de texte -->
-<!--						<p>
-						Il s'appelle Gudetama, et c'est l'un des personnages de la société Sanrio, à qui l'on doit Hello Kitty.</br>
-						? Flasque, jaune, endormi, Gudetama est en fait un étrange ouf flemmard inventé l'année dernière et dont le seul but est de ne rien faire de la journée et de se morfondre dans son blanc d'oeuf :D
+						<p>
+						Bienvenue à toi ! Merci de t'être inscrit sur notre site GudetamaFrance!
+						Tu peux maintenant contribuer aux traductions sur les vidéos de Gudetama et favoriser tes vidéos préférées !
+						</p>
+						<p>
+						Amuse-toi bien, ok bisou, la rédaction.
+						</p>
 						<!--Votre design est enfin prêt à être utilisé. Ouvrez cette page avec un éditeur de texte afin de la modifier à votre convenance.
 						Si vous ne parvenez pas à modifier votre design comme vous le voudriez, nous vous conseillons de suivre 
 						<a href="http://www.creer-son-website.fr/tutoriel.php">ce tutoriel</a>.
@@ -98,16 +81,9 @@
 						Nous vous serions fortement reconnaissants si vous pouviez participer à la vie du <a href="http://www.creer-son-website.fr/forum.php">forum</a> et de la communauté.
 						Il est par exemple possible de montrer vos créations aux autres membres, de présenter votre projet et d'obtenir ainsi des conseils pour l'améliorer.
 						Nous mettons aussi à disposition sur demande des userbars et des bannières pour présenter Générakit sur d'autres forums si vous le désirez.-->
-<!--					</p><br />
+						</p><br />
 						<!-- Fin de la zone de texte -->
 
-					</br>
-					</br>
-					</br>
-					</br>
-					</br>
-					</br>
-					</br>
 					</div></div>
 
 					<div id="clear_both"></div>
@@ -117,11 +93,9 @@
 			</div>
 
 		</div>
-		
 
-					
 		<div id="pied_de_page">
-			<!--<a href="inscription.jsp">Pas encore inscrit ? Cliquez ici !!</a>-->
+			<a>Hey coucou !</a>
 		</div>
 
 	</body>

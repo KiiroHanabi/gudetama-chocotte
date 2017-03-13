@@ -1,5 +1,3 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" >
 	<head>
@@ -18,6 +16,7 @@
 				<ul id="MH">
 				<li><a href="index.jsp">Accueil</a></li>
 				<li><a href="connexion.jsp">Connexion</a></li>
+				<li><a href="inscription.jsp">Inscription</a></li>
 				<!--<li><a href="#">Menu 3</a></li>
 				<li><a href="#">Menu 4</a></li>-->
 			</ul>
@@ -55,12 +54,13 @@
 					<div id="texte"><div id="overflow">
 
 						<!-- Début de la zone de texte -->
-						<h1>ぐでたまショートアニメ 第717話「フラッシュモブ」（2/15放送）</h1>
-						<h2>Diffusé le 14/02/2017</h2>
+						<h1>ぐでたまショートアニメ 第719話「もしもぐでたま マンガ家」（2/17放送）</h1>
+						<h2>Diffusé le 16/02/2017</h2>
 						<h3>Février 2017</h3>
 						<video width="1280" height="720" controls="controls">
-							<source src="C:\Users\Jojo\Downloads\kit graphique(2)\kit graphique\video1.mp4" type="video/mp4" />
+							<source src="C:\Users\Jojo\Downloads\kit graphique(2)\kit graphique\video3.mp4" type="video/mp4" />
 						</video>
+						<!--<video controls preload><source src="ぐでたまショートアニメ 第719話「もしもぐでたま マンガ家」（217放送）.ogv" type="video/ogg"/></video>
 						<!--Votre design est enfin prêt à être utilisé. Ouvrez cette page avec un éditeur de texte afin de la modifier à votre convenance.
 						Si vous ne parvenez pas à modifier votre design comme vous le voudriez, nous vous conseillons de suivre 
 						<a href="http://www.creer-son-website.fr/tutoriel.php">ce tutoriel</a>.
@@ -89,6 +89,7 @@
 					</br>
 					</br>
 					</br>
+					</br>
 					</div></div>
 
 					<div id="clear_both"></div>
@@ -101,7 +102,7 @@
 
 
 		<div id="pied_de_page">
-			<a href="http://www.creer-son-website.fr">Gudetama-Chocotte</a>
+			<!--<a href="http://www.creer-son-website.fr">Hey coucou !</a>-->
 		</div>
 
 

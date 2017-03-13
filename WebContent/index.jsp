@@ -6,7 +6,7 @@
 		<!-- Ce site a été créé avec http://www.creer-son-website.fr/ -->
 		<title>GudetamaFrance!</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<link rel="stylesheet" media="screen" type="text/css" title="Design" href="design/style.css" />
+		<link rel="stylesheet" media="screen" type="text/css" title="Design" href="css/design/style.css" />
 		<!--[if IE 6]><link rel="stylesheet" media="screen" type="text/css" title="Design" href="design/ie6.css" /> <![endif]-->
 	</head>
 
@@ -18,6 +18,8 @@
 			<ul id="MH">
 				<li><a href="index.jsp">Accueil</a></li>
 				<li><a href="connexion.jsp">Connexion</a></li>
+				<li><a href="inscription.jsp">Inscription</a></li>
+				<li><a href="interface.jsp">Admin</a></li>
 				<!--<li><a href="#">Menu 3</a></li>
 				<li><a href="#">Menu 4</a></li>-->
 			</ul>
@@ -32,10 +34,10 @@
 					<!-- Début du menu vertical -->
 					<div id="MV">
 						<div class="en_tete_MV">Séries</div>
-							<a class="lien_MV" href="video1.jsp">Noël 2016</a>
-							<a class="lien_MV">Eté 2016</a>
-							<a class="lien_MV">Noël 2015</a>
-							<a class="lien_MV">Eté 2015</a>
+							<a class="lien_MV" href="menu1.jsp">Février 2017</a>
+							<a class="lien_MV" href="menu2.jsp">Mars 2017</a>
+							<a class="lien_MV">Avril 2017(indisponible)</a>
+							<a class="lien_MV">Mai 2017 (indisponible)</a>
 							<!--<a class="lien_MV">Menu 5</a>
 							<a class="lien_MV">Menu 6</a>-->
 						<div class="bottom_MV"></div>
@@ -43,7 +45,7 @@
 						<div class="en_tete_MV">Autres</div>
 							<a class="lien_MV">Nouveautés</a>
 							<a class="lien_MV">Fan pages</a>
-							<a class="lien_MV">Qui sommes-nous</a>
+							<a class="lien_MV" href="quisommesnous.jsp">Qui sommes-nous</a>
 							<!--<a class="lien_MV">Menu 4</a>
 							<a class="lien_MV">Menu 5</a>
 							<a class="lien_MV">Menu 6</a>-->
@@ -93,7 +95,7 @@
 		</div>
 
 		<div id="pied_de_page">
-			<a href="http://www.creer-son-website.fr">Hey coucou !</a>
+			<a href="http://www.creer-son-website.fr">Guadetama-Chocotte</a>
 		</div>
 
 	</body>

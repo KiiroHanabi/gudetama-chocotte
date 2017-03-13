@@ -1,0 +1,234 @@
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////       BACKGROUND        ///////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+
+html, body
+{
+	margin : 0px;
+	padding : 0px;
+}
+
+html
+{
+	background-color : #4D4D4D;
+	font-family : "Trebuchet MS" , sans-serif;
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////    STRUCTURE GLOBALE    ///////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+
+#conteneur
+{
+	width : 80%;
+	min-width : 600px;
+	margin : auto;
+	margin-top : 35px;
+	padding-bottom : 25px;
+}
+
+#corps
+{
+	width : 100%;
+	background-color : #FFFFFF;
+	color : #000000;
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////        BANNIERE        ////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+
+#banniere
+{
+	height : 220px;
+	background : url("banniere.png") top center no-repeat;
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////          TEXTE          ///////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+
+#texte 
+{
+	padding : 20px;
+	text-align : justify;
+	font-size : 15px;
+}
+
+p
+{
+	margin-top : 0px;
+}
+
+h1
+{
+	font-size : 19px;
+	margin-top : 0px;
+}
+
+h2
+{
+	font-size : 16px;
+	margin-top : 0px;
+}
+		
+a
+{
+	color : #288de8;
+	text-decoration : none;
+}
+
+a:hover
+{
+	color : #ff8000;
+}
+
+#overflow
+{
+	overflow : hidden;
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////     MENU HORIZONTAL     ///////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+
+#MH
+{
+	height : 41px;
+	background : url("MH.png");
+	margin : 0px;
+	padding : 0px;
+	text-align : center;
+}
+
+#MH li
+{
+	display : inline;
+	margin-right:5px;
+	margin-left:-1px;
+	text-align : center;
+}
+
+#MH a
+{
+	display : inline-block;
+	margin : 0px;
+	height : 30px;
+	width:180px;
+	padding-top : 10px;
+	padding-left : 0px;
+	padding-right : 0px;
+	background : url("MH_bouton.png");
+	vertical-align:top;
+	text-decoration : none;
+	font-size : 14px;
+	font-weight : bold;
+}
+
+#MH li a
+{
+	color : #FFFFFF;
+}
+
+#MH li a:hover
+{
+	background : url("MH_bouton_hover.png");
+	width:180px;
+	height : 30px;
+	color : #C8C8C8;
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////       BAS DE PAGE       ///////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+
+#pied_de_page
+{
+	height : 34px;
+	background : url("pied_de_page.png") center;
+	text-align : center;
+	padding-top : 16px;
+	color : #FFFFFF;
+}
+
+#pied_de_page a
+{
+	color : #FFFFFF;
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////         BORDURE         ///////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+
+#CHG
+{
+	background : url("CHG.png") no-repeat top left;
+	float : left;
+	width : 8px;
+	height : 8px;
+	margin : 0px;
+}
+
+#CHD
+{
+	background : url("CHD.png") no-repeat top right;
+	float : right;
+	width : 8px;
+	height : 8px;
+	margin : 0px;
+}
+
+#CBG
+{
+	background : url("CBG.png") no-repeat bottom left;
+	float : left;
+	width : 8px;
+	height : 8px;
+	margin : 0px;
+}
+
+#CBD
+{
+	background : url("CBD.png") no-repeat bottom right;
+	float : right;
+	width : 8px;
+	height : 8px;
+	margin : 0px;
+}
+
+#BH
+{
+	background : url("BH.png") repeat-x top center;
+	margin-right : 8px;
+	margin-left : 8px;
+	height : 8px;
+}
+
+#BG
+{
+	background : url("BG.png") repeat-y left;
+	padding-left : 8px;
+	margin : 0px;
+}
+
+#BD
+{
+	background : url("BD.png") repeat-y right;
+	padding-right : 8px;
+	margin : 0px;
+}
+
+#BB
+{
+	background : url("BB.png") repeat-x bottom center;
+	margin-right : 8px;
+	margin-left : 8px;
+	height : 8px;
+	padding : 0px;
+}

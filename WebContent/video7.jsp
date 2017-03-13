@@ -55,11 +55,11 @@
 					<div id="texte"><div id="overflow">
 
 						<!-- Début de la zone de texte -->
-						<h1>ぐでたまショートアニメ 第717話「フラッシュモブ」（2/15放送）</h1>
-						<h2>Diffusé le 14/02/2017</h2>
-						<h3>Février 2017</h3>
+						<h1>ぐでたまショートアニメ 第731話「ぐでたま名言集」（37放送）</h1>
+						<h2>Diffusé le 06/03/2017</h2>
+						<h3>Mars 2017</h3>
 						<video width="1280" height="720" controls="controls">
-							<source src="C:\Users\Jojo\Downloads\kit graphique(2)\kit graphique\video1.mp4" type="video/mp4" />
+							<source src="C:\Users\Jojo\Downloads\kit graphique(2)\kit graphique\video7.mp4" type="video/mp4" />
 						</video>
 						<!--Votre design est enfin prêt à être utilisé. Ouvrez cette page avec un éditeur de texte afin de la modifier à votre convenance.
 						Si vous ne parvenez pas à modifier votre design comme vous le voudriez, nous vous conseillons de suivre 

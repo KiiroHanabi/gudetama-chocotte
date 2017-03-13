@@ -1,12 +1,11 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" >
 	<head>
 		<!-- Ce site a été créé avec http://www.creer-son-website.fr/ -->
 		<title>GudetamaFrance!</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<link rel="stylesheet" media="screen" type="text/css" title="Design" href="css/design/style.css" />
+		<link rel="stylesheet" media="screen" type="text/css" title="Design" href="css/design/style3.css" />
 		<!--[if IE 6]><link rel="stylesheet" media="screen" type="text/css" title="Design" href="design/ie6.css" /> <![endif]-->
 	</head>
 
@@ -18,6 +17,7 @@
 				<ul id="MH">
 				<li><a href="index.jsp">Accueil</a></li>
 				<li><a href="connexion.jsp">Connexion</a></li>
+				<li><a href="inscription.jsp">Inscripion</a></li>
 				<!--<li><a href="#">Menu 3</a></li>
 				<li><a href="#">Menu 4</a></li>-->
 			</ul>
@@ -30,12 +30,20 @@
 -->				<div id="corps">
 
 					<!-- Début du menu vertical -->
-<!--					<div id="MV">
-						<div class="en_tete_MV">Séries</div>
-							<a class="lien_MV">Noël 2016</a>
-							<a class="lien_MV">Eté 2016</a>
-							<a class="lien_MV">Noël 2015</a>
-							<a class="lien_MV">Eté 2015</a>
+					<div id="MV">
+						<div class="en_tete_MV">Vidéos Février 2017</div>
+						</br>
+						</br>
+							<h1>ぐでたまショートアニメ 第717話「フラッシュモブ」（2/15放送）</h1>
+							<a class="lien MV" href="video1.jsp"><img src="css/design/introvideo.png" alt="ぐでたまショートアニメ 第717話「フラッシュモブ」（2/15放送）"/></a>
+							<h1>ぐでたまショートアニメ 第718話「あっちっち」（2/16放送）</h1>
+							<a class="lien_MV" href="video2.jsp"><img src="css/design/introvideo.png" alt="ぐでたまショートアニメ 第718話「あっちっち」（2/16放送）"/></a>
+							<h1>ぐでたまショートアニメ 第719話「もしもぐでたま マンガ家」（2/17放送）</h1>
+							<a class="lien_MV" href="video3.jsp"><img src="css/design/introvideo.png" alt="ぐでたまショートアニメ 第719話「もしもぐでたま マンガ家」（2/17放送）"/></a>
+							<h1>ぐでたまショートアニメ 第720話「子守唄」（2/20放送）</h1>
+							<a class="lien_MV" href="video4.jsp"><img src="css/design/introvideo.png" alt="ぐでたまショートアニメ 第720話「子守唄」（2/20放送）"/></a>
+							<h1>ぐでたまショートアニメ 第721話「飼い主とペット」（2/21放送）</h1>
+							<a class="lien_MV" href="video5.jsp"><img src="css/design/introvideo.png" alt="ぐでたまショートアニメ 第721話「飼い主とペット」（2/21放送）"/></a>
 							<!--<a class="lien_MV">Menu 5</a>
 							<a class="lien_MV">Menu 6</a>-->
 <!--						<div class="bottom_MV"></div>
@@ -55,12 +63,12 @@
 					<div id="texte"><div id="overflow">
 
 						<!-- Début de la zone de texte -->
-						<h1>ぐでたまショートアニメ 第717話「フラッシュモブ」（2/15放送）</h1>
+						<!--<h1>ぐでたまショートアニメ 第717話「フラッシュモブ」（2/15放送）</h1>
 						<h2>Diffusé le 14/02/2017</h2>
-						<h3>Février 2017</h3>
-						<video width="1280" height="720" controls="controls">
-							<source src="C:\Users\Jojo\Downloads\kit graphique(2)\kit graphique\video1.mp4" type="video/mp4" />
-						</video>
+						<h3>St Valentin 2017</h3>
+						<!--<p><iframe width="560" height="315" src="https://www.youtube.com/embed/rE7dM9Xhcwo" frameborder="0" allowfullscreen></iframe></p>-->
+						<!--<video controls preload><source src="ぐでたまショートアニメ 第717話「フラッシュモブ」（215放送）.mp4" type="video/mp4"/></video>
+						<video controls preload><source src="ぐでたまショートアニメ-第717話「フラッシュモブ」（215放送）.ogv" type="video/ogg"/></video>
 						<!--Votre design est enfin prêt à être utilisé. Ouvrez cette page avec un éditeur de texte afin de la modifier à votre convenance.
 						Si vous ne parvenez pas à modifier votre design comme vous le voudriez, nous vous conseillons de suivre 
 						<a href="http://www.creer-son-website.fr/tutoriel.php">ce tutoriel</a>.
@@ -89,6 +97,7 @@
 					</br>
 					</br>
 					</br>
+					</br>
 					</div></div>
 
 					<div id="clear_both"></div>
@@ -101,7 +110,7 @@
 
 
 		<div id="pied_de_page">
-			<a href="http://www.creer-son-website.fr">Gudetama-Chocotte</a>
+			<!--<a href="http://www.creer-son-website.fr">Hey coucou !</a>-->
 		</div>
 
 

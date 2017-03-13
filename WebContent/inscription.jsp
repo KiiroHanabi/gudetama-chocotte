@@ -15,7 +15,7 @@
 			<!-- Début du menu horizontal -->
 			<ul id="MH">
 				<li><a href="index.jsp">Accueil</a></li>
-				<li><a href="inscription.jsp">Inscription</a></li>
+				<li><a href="connexion.jsp">Connexion</a></li>
 				<!--<li><a href="#">Menu 3</a></li>
 				<li><a href="#">Menu 4</a></li>-->
 			</ul>
@@ -29,30 +29,15 @@
 
 					<!-- Début du menu vertical -->
 					<div id="MV">
-						<div class="en_tete_MV">Connexion</div>
+						<div class="en_tete_MV">Inscription</div>
+							<p>Login</p><textarea rows=1 cols=20></textarea>
 							<p>Email</p><textarea rows=1 cols=20></textarea>
 							<p>Mot de passe</p><textarea rows=1 cols=20></textarea>
+							<p>Confirmation mot de passe</p><textarea rows=1 cols=20></textarea>
 							</br>
 							</br>
-							</br>
-							<button><a href="accueil.jsp">Se connecter</a></button>
-							</br>
-							</br>
-							</br>
-							</br>
-							</br>
-							</br>
-							</br>
-							</br>
-							</br>
-							</br>
-							</br>
-							</br>
-							</br>
-							</br>
-							</br>
-							<!-- <button style="background-color : #505050; font-size : 16px;"><a href="inscription.jsp">Pas encore inscrit ? Cliquez ici !!</a></button>-->
-<!--						<a class="lien_MV" href="video1.html">Noël 2016</a>
+							<button><a href="accueil.jsp">Envoyer</a></button>
+<!--						<a class="lien_MV" href="video1.jsp">Noël 2016</a>
 							<a class="lien_MV">Eté 2016</a>
 							<a class="lien_MV">Noël 2015</a>
 							<a class="lien_MV">Eté 2015</a>
@@ -117,11 +102,10 @@
 			</div>
 
 		</div>
-		
-
+-->
 					
 		<div id="pied_de_page">
-			<!--<a href="inscription.jsp">Pas encore inscrit ? Cliquez ici !!</a>-->
+			<!--<a >Hey coucou!</a>-->
 		</div>
 
 	</body>

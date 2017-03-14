@@ -14,13 +14,12 @@ public class ModifVideoImpl implements IModifVideo {
 	public void modifVideo(Video v) {
 		Connection conn = SingletonConnection.getConnection();
 		try {
-			PreparedStatement ps = conn.prepareStatement("UPDATE video SET titreVideo=?, dateVideo=?, urlVideo=?, dureeVideo=?, idTraduction=?, estTraduit=? WHERE idVideo=?");
+			PreparedStatement ps = conn.prepareStatement("UPDATE video SET titreVideo=?, dateVideo=?, urlVideo=?, dureeVideo=?, idTraduction=? WHERE idVideo=?");
 			ps.setString(1, v.getTitreVideo());
 			ps.setDate(2, new Date(v.getDateVideo().getTime()));
 			ps.setString(3, v.getUrlVideo());
 			ps.setTime(4, v.getDureeVideo());
 			ps.setInt(5, v.getIdTraduction());
-			ps.setBoolean(6,  v.isEstTraduit());
 			ps.executeUpdate();
 			ps.close();
 		} catch (SQLException e) {
@@ -39,7 +38,6 @@ public class ModifVideoImpl implements IModifVideo {
 			ps.setString(3, v.getUrlVideo());
 			ps.setTime(4, v.getDureeVideo());
 			ps.setInt(5, v.getIdTraduction());
-			ps.setBoolean(6,  v.isEstTraduit());
 			ps.executeUpdate();
 			ps.close();
 		} catch (SQLException e) {
@@ -75,7 +73,6 @@ public class ModifVideoImpl implements IModifVideo {
 				v.setUrlVideo(rs.getString("url"));
 				v.setDureeVideo(rs.getTime("dureeVideo"));
 				v.setIdTraduction(rs.getInt("idTraduction"));
-				v.setEstTraduit(rs.getBoolean("estTraduit"));
 				vid.add(v);				
 			}
 			ps.close();
@@ -90,7 +87,7 @@ public class ModifVideoImpl implements IModifVideo {
 		List<Video> vid = new ArrayList<Video>();
 		Connection conn = SingletonConnection.getConnection();
 		try {
-			PreparedStatement ps = conn.prepareStatement("SELECT * FROM video WHERE login LIKE ?");
+			PreparedStatement ps = conn.prepareStatement("SELECT * FROM video WHERE titreVideo LIKE ?");
 			ps.setString(1,  "%"+mc+"%");
 			ResultSet rs = ps.executeQuery();
 			while(rs.next()){
@@ -98,10 +95,9 @@ public class ModifVideoImpl implements IModifVideo {
 				v.setIdVideo(rs.getInt("idVideo"));
 				v.setTitreVideo(rs.getString("titreVideo"));
 				v.setDateVideo(rs.getDate("dateVideo"));
-				v.setUrlVideo(rs.getString("url"));
+				v.setUrlVideo(rs.getString("urlVideo"));
 				v.setDureeVideo(rs.getTime("dureeVideo"));
 				v.setIdTraduction(rs.getInt("idTraduction"));
-				v.setEstTraduit(rs.getBoolean("estTraduit"));
 				vid.add(v);				
 			}
 			ps.close();
@@ -126,8 +122,7 @@ public class ModifVideoImpl implements IModifVideo {
 				v.setDateVideo(rs.getDate("dateVideo"));
 				v.setUrlVideo(rs.getString("url"));
 				v.setDureeVideo(rs.getTime("dureeVideo"));
-				v.setIdTraduction(rs.getInt("idTraduction"));
-				v.setEstTraduit(rs.getBoolean("estTraduit"));		
+				v.setIdTraduction(rs.getInt("idTraduction"));	
 			}
 			ps.close();
 		} catch (SQLException e) {

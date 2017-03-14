@@ -5,32 +5,35 @@
                       http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
   version="3.1">
 <display-name>My web application</display-name>
+
 	<servlet>
-		<servlet-name>cs</servlet-name>
+		<servlet-name>controleurservlet</servlet-name>
 		<servlet-class>web.ControleurServlet</servlet-class>
-		<!-- <servlet-name>babyServlet</servlet-name>
-		<servlet-class>babyServlet</servlet-class> -->
 	</servlet>
-	
-	<servlet-mapping>
-		<servlet-name>cs</servlet-name>
-		<url-pattern>/controleur</url-pattern>
-		<!-- <servlet-name>babyServlet</servlet-name>
-		<url-pattern>/rene</url-pattern> -->
-	</servlet-mapping>
-	
-	<servlet-mapping>
-		<servlet-name>cs</servlet-name>
-		<url-pattern>*.php</url-pattern>
-	</servlet-mapping>
 	
 	<servlet>
 		<servlet-name>controleurservletvideo</servlet-name>
-		<servlet-class>Web.ControleurServletVideo</servlet-class>
+		<servlet-class>web.ControleurServletVideo</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>controleurservlettraduction</servlet-name>
+		<servlet-class>web.ControleurServletTraduction</servlet-class>
 	</servlet>
 	
 	<servlet-mapping>
-		<servlet-name>controleurservletvideo</servlet-name>
-		<url-pattern>/controleurservletvideo</url-pattern>
+		<servlet-name>controleurservlet</servlet-name>
+		<url-pattern>/controleur.php</url-pattern>
 	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>controleurservletvideo</servlet-name>
+		<url-pattern>/controleurvideo.php</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>controleurservlettraduction</servlet-name>
+		<url-pattern>/controleurtraduction.php</url-pattern>
+	</servlet-mapping>
+
 </web-app>

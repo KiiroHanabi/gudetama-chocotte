@@ -40,9 +40,9 @@
 
 						<!-- Début du menu horizontal -->
 						<ul id="MH1">
-							<li><a href="#">Gérer Vidéos</a></li>
-							<li><a href="#">Gérer Utilisateurs</a></li>
-							<li><a href="#">Gérer Traductions</a></li>
+							<li><a href="vueVideos.jsp">Gérer Vidéos</a></li>
+							<li><a href="vueUtilisateur.jsp">Gérer Utilisateurs</a></li>
+							<li><a href="vueTraductions.jsp">Gérer Traductions</a></li>
 						</ul>
 						<!-- Fin du menu horizontal -->
 

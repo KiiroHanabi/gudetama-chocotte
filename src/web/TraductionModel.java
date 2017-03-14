@@ -3,13 +3,12 @@ package web;
 import java.util.ArrayList;
 import java.util.List;
 
-import metier.Utilisateur;
-import metier.Video;
+import metier.Traduction;
 
-public class VideoModel {
+public class TraductionModel {
 	private String motCle;
-	private Video video = new Video();
-	private List<Video> videos = new ArrayList<Video>();
+	private Traduction traduction = new Traduction();
+	private List<Traduction> traductions = new ArrayList<Traduction>();
 	private String errors;
 	private String mode = "ajout";
 	
@@ -25,17 +24,17 @@ public class VideoModel {
 	public void setMotCle(String motCle) {
 		this.motCle = motCle;
 	}
-	public List<Video> getVideos() {
-		return videos;
+	public List<Traduction> getTraductions() {
+		return traductions;
 	}
-	public void setVideos(List<Video> videos) {
-		this.videos = videos;
+	public void setTraductions(List<Traduction> traductions) {
+		this.traductions = traductions;
 	}
-	public Video getVideo() {
-		return video;
+	public Traduction getTraduction() {
+		return traduction;
 	}
-	public void setVideo(Video video) {
-		this.video = video;
+	public void setTraduction(Traduction traduction) {
+		this.traduction = traduction;
 	}
 	public String getMode() {
 		return mode;

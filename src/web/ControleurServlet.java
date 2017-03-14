@@ -20,18 +20,18 @@ public class ControleurServlet extends HttpServlet {
 	}
 	
 	protected void doGet( HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException {
-		request.getRequestDispatcher("vueUtilisateur.jsp").forward(request,  response);
+		doPost(request,  response);
 	}
 	// doute sur le nom de la liste et utilisateursParMC -> 1:00:00 de la vidéo environ
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException {
 		UtilisateurModel model = new UtilisateurModel();
-		//request.setAttribute("model",model);
-		model.setMotCle(request.getParameter("motCle"));
+		request.setAttribute("model",model);
+		/*model.setMotCle(request.getParameter("motCle"));
 		List<Utilisateur> utilisateurs=metier.listUtilisateurMC(model.getMotCle());
 		model.setUtilisateurs(utilisateurs);
 		request.setAttribute("model",model);
-		request.getRequestDispatcher("vueUtilisateur.jsp").forward(request, response);
-		/*String action=request.getParameter("action");	
+		request.getRequestDispatcher("vueUtilisateur.jsp").forward(request, response);*/
+		String action=request.getParameter("action");	
 		if(action!=null){
 			if(action.equals("chercher")){
 				model.setMotCle(request.getParameter("motCle"));
@@ -43,11 +43,36 @@ public class ControleurServlet extends HttpServlet {
 			}
 			// doute sur le nom de l'action.est-ce vraiment delete ?
 			else if(action.equals("delete")){
-				int id=request.getParameter("idUtilisateur");
+				int id=Integer.parseInt(request.getParameter("ref"));
 				metier.suppUtilisateur(id);
-				model.setUtilisateurs(metier.listUtilisateurs());
+				model.setUtilisateurs(metier.listUtilisateur());
+			}
+			else if(action.equals("edit")) {
+				int id=Integer.parseInt(request.getParameter("ref"));
+				Utilisateur u = metier.getUtilisateur(id);
+				model.setUtilisateur(u);
+				model.setMode("edit");
+				model.setUtilisateurs(metier.listUtilisateur());
+			}
+			else if(action.equals("save")) {
+				try {
+					int id = Integer.parseInt(request.getParameter("id"));
+					model.getUtilisateur().setId(id);
+					model.getUtilisateur().setLogin(request.getParameter("login"));
+					model.getUtilisateur().setEmail(request.getParameter("email"));
+					model.getUtilisateur().setMdp(request.getParameter("mdp"));
+					model.getUtilisateur().setStatut(request.getParameter("statut"));
+					model.setMode(request.getParameter("mode"));
+					if(model.getMode().equals("ajout"))
+						metier.addUtilisateur(model.getUtilisateur());
+					else if(model.getMode().equals("edit"))
+						metier.modifUtilisateur(model.getUtilisateur());
+					model.setUtilisateurs(metier.listUtilisateur());
+				} catch(Exception e) {
+					model.setErrors(e.getMessage());
+				}
 			}
 		}
-		request.getRequestDispatcher("VueUtilisateurs.jsp").forward(request,response);*/
-	}
+		request.getRequestDispatcher("vueUtilisateur.jsp").forward(request,response);
+	} //1:37:40 2-JEE: Bases du Développement Web...
 }

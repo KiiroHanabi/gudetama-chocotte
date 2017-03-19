@@ -20,8 +20,6 @@
 				<li><a href="connexion.jsp">Connexion</a></li>
 				<li><a href="inscription.jsp">Inscription</a></li>
 				<li><a href="interface.jsp">Admin</a></li>
-				<!--<li><a href="#">Menu 3</a></li>
-				<li><a href="#">Menu 4</a></li>-->
 			</ul>
 			<!-- Fin du menu horizontal -->
 

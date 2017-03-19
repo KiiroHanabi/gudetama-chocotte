@@ -17,8 +17,7 @@
 				<li><a href="index.jsp">Accueil</a></li>
 				<li><a href="connexion.jsp">Connexion</a></li>
 				<li><a href="inscription.jsp">Inscription</a></li>
-				<!--<li><a href="#">Menu 3</a></li>
-				<li><a href="#">Menu 4</a></li>-->
+				<li><a href="interface.jsp">Admin</a></li>
 			</ul>
 			<!-- Fin du menu horizontal -->
 
@@ -31,10 +30,10 @@
 					<!-- Début du menu vertical -->
 					<div id="MV">
 						<div class="en_tete_MV">Séries</div>
-							<a class="lien_MV" href="video1.jsp">Saint-Valentin 2017</a>
-							<a class="lien_MV" href="video2.jsp">Hiver 2017</a>
-							<a class="lien_MV">Noël 2015</a>
-							<a class="lien_MV">Eté 2015</a>
+							<a class="lien_MV" href="menu1.jsp">Février 2017</a>
+							<a class="lien_MV" href="menu2.jsp">Mars 2017</a>
+							<a class="lien_MV">Avril 2017(indisponible)</a>
+							<a class="lien_MV">Mai 2017 (indisponible)</a>
 							<!--<a class="lien_MV">Menu 5</a>
 							<a class="lien_MV">Menu 6</a>-->
 						<div class="bottom_MV"></div>

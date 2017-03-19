@@ -21,6 +21,11 @@
 		<servlet-class>web.ControleurServletTraduction</servlet-class>
 	</servlet>
 	
+	<servlet>
+		<servlet-name>controleurservletinscription</servlet-name>
+		<servlet-class>web.ControleurServletInscription</servlet-class>
+	</servlet>
+	
 	<servlet-mapping>
 		<servlet-name>controleurservlet</servlet-name>
 		<url-pattern>/controleur.php</url-pattern>
@@ -36,4 +41,8 @@
 		<url-pattern>/controleurtraduction.php</url-pattern>
 	</servlet-mapping>
 
+	<servlet-mapping>
+		<servlet-name>controleurservletinscription</servlet-name>
+		<url-pattern>/controleurinscription.php</url-pattern>
+	</servlet-mapping>
 </web-app>

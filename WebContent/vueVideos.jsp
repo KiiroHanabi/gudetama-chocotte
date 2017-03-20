@@ -23,7 +23,7 @@
 				<tr>
 					<td> MotClé :</td>
 					<td><input type="text" name="motCle" value=${model.motCle}/></td>
-					<td><input type="submit" value="Rechercher" name="action"/></td>
+					<td><input type="submit" value="chercher" name="action"/></td>
 				</tr>
 			</table>
 		</form>

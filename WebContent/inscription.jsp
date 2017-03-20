@@ -60,34 +60,6 @@ function verifMail(champ){
       return true;
    }
 }
-
-function getMdp(champ) {
-	return champ.value;
-}
-
-function verifCmdp(champ, mdp){
-	if(champ.value.length < 2 || champ.value.length > 25)
-   {
-	   surligne(champ, true);
-		  alert("indiquez votre mot de passe (entre 2 et 25 caractéres)");
-		  return false;
-   }
-   else
-   {
-		if(!mdp.equals(champ.value)) {
-		  surligne(champ, true);
-		  alert("vos mots de passe ne correspondent pas");
-		  return false;
-		}
-		else
-	   {
-		  surligne(champ, false);
-				return true;
-	   }
-      surligne(champ, false);
-	        return true;
-   }
-}
 </script>
 	</head>
 
@@ -115,18 +87,15 @@ function verifCmdp(champ, mdp){
 						<div class="en_tete_MV">Inscription</div>
 						<form method="post" action="controleurinscription.php">
 						<input type="hidden" value="${model.mode}" name="mode">
-							<!-- <p>Id</p><input type="text" name="id" value="${model.utilisateur.id}"/>-->
 							<p>Login</p><input type="text" name="login" value="${model.utilisateur.login}" onblur="verifLogin(this)"/>
 							<p>Email</p><input type="text" name="email" value="${model.utilisateur.email}" onblur="verifMail(this)"/></p>
 							<p>Mot de passe</p><input type="password" name="mdp" value="${model.utilisateur.mdp}" onblur="verifMdp(this);"/></p>
 							
-							<!-- <p>Confirmation mot de passe</p><textarea rows=1 cols=20></textarea>-->
-							<!-- <p>Statut</p><input type="hidden" name="statut" value="${model.utilisateur.statut}"/>-->
 							</br>
 							</br>
-							<p><input type="submit" name="action" value="appliquer"></p>
+							<p><input type="submit" name="action" value="valider"></p>
 							</form>
-							<button><a href="connexion.jsp">Valider</a></button>
+							<button><a href="connexion.jsp">Se connecter</a></button>
 						<div class="bottom_MV"></div>
 						<div class="marge_MV"></div>
 					</div>

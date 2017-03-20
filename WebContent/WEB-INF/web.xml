@@ -26,6 +26,11 @@
 		<servlet-class>web.ControleurServletInscription</servlet-class>
 	</servlet>
 	
+	<servlet>
+		<servlet-name>controleurservletconnexion</servlet-name>
+		<servlet-class>web.ControleurServletConnexion</servlet-class>
+	</servlet>
+	
 	<servlet-mapping>
 		<servlet-name>controleurservlet</servlet-name>
 		<url-pattern>/controleur.php</url-pattern>
@@ -44,5 +49,10 @@
 	<servlet-mapping>
 		<servlet-name>controleurservletinscription</servlet-name>
 		<url-pattern>/controleurinscription.php</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>controleurservletconnexion</servlet-name>
+		<url-pattern>/controleureconnexion.php</url-pattern>
 	</servlet-mapping>
 </web-app>

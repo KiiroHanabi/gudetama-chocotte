@@ -11,12 +11,13 @@ public class Video implements Serializable {
 	private String urlVideo;
 	private Time dureeVideo;
 	private int idTraduction;
-	
+	private String pageJsp;
+
 	public Video() {
 		super();
 	}
 	
-	public Video(int idVideo, String titreVideo, Date dateVideo, String urlVideo, Time dureeVideo, int idTraduction ) {
+	public Video(int idVideo, String titreVideo, Date dateVideo, String urlVideo, Time dureeVideo, int idTraduction, String pageJsp) {
 		super();
 		this.idVideo = idVideo;
 		this.titreVideo = titreVideo;
@@ -24,6 +25,7 @@ public class Video implements Serializable {
 		this.urlVideo = urlVideo;
 		this.dureeVideo = dureeVideo;
 		this.idTraduction = idTraduction;
+		this.pageJsp = pageJsp;
 	}
 
 	public int getIdVideo() {
@@ -73,5 +75,14 @@ public class Video implements Serializable {
 	public void setIdTraduction(int idTraduction) {
 		this.idTraduction = idTraduction;
 	}
+	
+	public String getPageJsp() {
+		return pageJsp;
+	}
+
+	public void setPageJsp(String pageJsp) {
+		this.pageJsp = pageJsp;
+	}
+
 
 }

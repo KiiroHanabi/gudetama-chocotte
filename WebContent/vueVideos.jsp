@@ -68,6 +68,11 @@
 					<td></td>
 				</tr>
 				<tr>
+					<td>Page JSP :</td>
+					<td><input type="time" name="pageJsp" value="${model.video.pageJsp}"/></td>
+					<td></td>
+				</tr>
+				<tr>
 					<td>ID traduction :</td>
 					<td><input type="number" name="idTraduction" value="${model.video.idTraduction}"/></td>
 					<td></td>
@@ -84,7 +89,7 @@
 	<div>
 		<table class="table1">
 			<tr>
-				<th>ID</th><th>Video</th><th>Date</th><th>URL</th><th>Duree</th><th>ID traduction</th>
+				<th>ID</th><th>Video</th><th>Date</th><th>URL</th><th>Duree</th><th>ID traduction</th><th>Page JSP</th>
 			</tr>
 			<c:forEach items="${model.videos}" var="v">
 				<tr>
@@ -94,6 +99,7 @@
 					<td>${v.urlVideo}</td>
 					<td>${v.dureeVideo}</td>
 					<td>${v.idTraduction}</td>
+					<td>${v.pageJsp}</td>
 					<td><a href="controleurvideo.php?action=delete&ref=${v.idVideo}">Supprimer</a></td>
 					<td><a href="controleurvideo.php?action=edit&ref=${v.idVideo}">Edit</a></td>
 				</tr>

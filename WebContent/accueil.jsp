@@ -160,7 +160,7 @@
 								<td>${v.titreVideo}</td>
 								<td>${v.dateVideo}</td>
 								<!-- <td>${v.urlVideo}</td>-->
-								<td><a href=${v.nomJSPVideo}>cliquez ici pour voir la vidéo</a></td> <!-- AJOUTER UN NOMJSPVIDEO -->
+								<td><a href=${v.pageJsp}>Voir vidéo</a></td>
 								<td>${v.dureeVideo}</td>			
 								<td>${v.idTraduction}</td>
 							</tr>

@@ -14,12 +14,13 @@ public class ModifVideoImpl implements IModifVideo {
 	public void modifVideo(Video v) {
 		Connection conn = SingletonConnection.getConnection();
 		try {
-			PreparedStatement ps = conn.prepareStatement("UPDATE video SET titreVideo=?, dateVideo=?, urlVideo=?, dureeVideo=?, idTraduction=? WHERE idVideo=?");
+			PreparedStatement ps = conn.prepareStatement("UPDATE video SET titreVideo=?, dateVideo=?, urlVideo=?, dureeVideo=?, idTraduction=?, pageJsp=? WHERE idVideo=?");
 			ps.setString(1, v.getTitreVideo());
 			ps.setDate(2, new Date(v.getDateVideo().getTime()));
 			ps.setString(3, v.getUrlVideo());
 			ps.setTime(4, v.getDureeVideo());
 			ps.setInt(5, v.getIdTraduction());
+			ps.setString(6,  v.getPageJsp());
 			ps.executeUpdate();
 			ps.close();
 		} catch (SQLException e) {
@@ -31,13 +32,14 @@ public class ModifVideoImpl implements IModifVideo {
 	public void addVideo(Video v) {
 		Connection conn = SingletonConnection.getConnection();
 		try {
-			PreparedStatement ps = conn.prepareStatement("INSERT INTO video VALUES (?,?,?,?,?)");
+			PreparedStatement ps = conn.prepareStatement("INSERT INTO video VALUES (?,?,?,?,?,?)");
 			ps.setInt(1, v.getIdVideo());
 			ps.setString(1, v.getTitreVideo());
 			ps.setDate(2, new Date(v.getDateVideo().getTime()));
 			ps.setString(3, v.getUrlVideo());
 			ps.setTime(4, v.getDureeVideo());
 			ps.setInt(5, v.getIdTraduction());
+			ps.setString(6, v.getPageJsp());
 			ps.executeUpdate();
 			ps.close();
 		} catch (SQLException e) {
@@ -73,6 +75,7 @@ public class ModifVideoImpl implements IModifVideo {
 				v.setUrlVideo(rs.getString("url"));
 				v.setDureeVideo(rs.getTime("dureeVideo"));
 				v.setIdTraduction(rs.getInt("idTraduction"));
+				v.setPageJsp(rs.getString("pageJsp"));
 				vid.add(v);				
 			}
 			ps.close();
@@ -87,7 +90,7 @@ public class ModifVideoImpl implements IModifVideo {
 		List<Video> vid = new ArrayList<Video>();
 		Connection conn = SingletonConnection.getConnection();
 		try {
-			PreparedStatement ps = conn.prepareStatement("SELECT * FROM video WHERE titreVideo LIKE ? OR idVideo LIKE ? OR dateVideo LIKE ? OR dureeVideo LIKE ?");
+			PreparedStatement ps = conn.prepareStatement("SELECT * FROM video WHERE titreVideo LIKE ? OR idVideo LIKE ? OR dateVideo LIKE ? OR dureeVideo LIKE ? OR pageJsp LIKE ?");
 			ps.setString(1,  "%"+mc+"%");
 			ps.setString(2, "%"+mc+"%");
 			ps.setString(3, "%"+mc+"%");
@@ -101,6 +104,7 @@ public class ModifVideoImpl implements IModifVideo {
 				v.setUrlVideo(rs.getString("urlVideo"));
 				v.setDureeVideo(rs.getTime("dureeVideo"));
 				v.setIdTraduction(rs.getInt("idTraduction"));
+				v.setPageJsp(rs.getString("pageJsp"));
 				vid.add(v);				
 			}
 			ps.close();
@@ -125,7 +129,8 @@ public class ModifVideoImpl implements IModifVideo {
 				v.setDateVideo(rs.getDate("dateVideo"));
 				v.setUrlVideo(rs.getString("url"));
 				v.setDureeVideo(rs.getTime("dureeVideo"));
-				v.setIdTraduction(rs.getInt("idTraduction"));	
+				v.setIdTraduction(rs.getInt("idTraduction"));
+				v.setPageJsp(rs.getString("pageJsp"));
 			}
 			ps.close();
 		} catch (SQLException e) {

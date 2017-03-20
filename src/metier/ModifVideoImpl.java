@@ -87,8 +87,11 @@ public class ModifVideoImpl implements IModifVideo {
 		List<Video> vid = new ArrayList<Video>();
 		Connection conn = SingletonConnection.getConnection();
 		try {
-			PreparedStatement ps = conn.prepareStatement("SELECT * FROM video WHERE titreVideo LIKE ?");
+			PreparedStatement ps = conn.prepareStatement("SELECT * FROM video WHERE titreVideo LIKE ? OR idVideo LIKE ? OR dateVideo LIKE ? OR dureeVideo LIKE ?");
 			ps.setString(1,  "%"+mc+"%");
+			ps.setString(2, "%"+mc+"%");
+			ps.setString(3, "%"+mc+"%");
+			ps.setString(4, "%"+mc+"%");
 			ResultSet rs = ps.executeQuery();
 			while(rs.next()){
 				Video v = new Video();

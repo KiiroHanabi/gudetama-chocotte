@@ -90,8 +90,10 @@ public class ModifUtilisateurImpl implements IModifUtilisateur {
 		List<Utilisateur> util = new ArrayList<Utilisateur>();
 		Connection conn = SingletonConnection.getConnection();
 		try {
-			PreparedStatement ps = conn.prepareStatement("SELECT * FROM utilisateur WHERE login LIKE ?");
+			PreparedStatement ps = conn.prepareStatement("SELECT * FROM utilisateur WHERE login LIKE ? OR idUtilisateur LIKE ? OR statut LIKE ? ");
 			ps.setString(1,  "%"+mc+"%");
+			ps.setString(2, "%"+mc+"%");
+			ps.setString(3, "%"+mc+"%");
 			ResultSet rs = ps.executeQuery();
 			while(rs.next()){
 				Utilisateur u = new Utilisateur();

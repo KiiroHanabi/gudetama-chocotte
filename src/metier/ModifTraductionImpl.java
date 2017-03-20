@@ -92,8 +92,13 @@ public class ModifTraductionImpl implements IModifTraduction {
 		List<Traduction> trad = new ArrayList<Traduction>();
 		Connection conn = SingletonConnection.getConnection();
 		try {
-			PreparedStatement ps = conn.prepareStatement("SELECT * FROM traduction WHERE urlTraduction LIKE ?");
+			PreparedStatement ps = conn.prepareStatement("SELECT * FROM traduction WHERE urlTraduction LIKE ? OR idTraduction LIKE ? OR idUtilisateur LIKE ? OR votePositif LIKE ? OR voteNegatif LIKE ? OR totalVote LIKE ?");
 			ps.setString(1,  "%"+mc+"%");
+			ps.setString(2,  "%"+mc+"%");
+			ps.setString(3,  "%"+mc+"%");
+			ps.setString(4,  "%"+mc+"%");
+			ps.setString(5,  "%"+mc+"%");
+			ps.setString(6,  "%"+mc+"%");
 			ResultSet rs = ps.executeQuery();
 			while(rs.next()){
 				Traduction t = new Traduction();

@@ -36,15 +36,22 @@
 						<h1>ぐでたまショートアニメ 第719話「もしもぐでたま マンガ家」（2/17放送）</h1>
 						<h2>Diffusé le 16/02/2017</h2>
 						<h3>Février 2017</h3>
-						<video width="1280" height="720" controls="controls">
-							<source src="C:\Users\Jojo\Downloads\kit graphique(2)\kit graphique\video3.mp4" type="video/mp4" />
-						</video>
-						
-					</br>
-					</br>
-					<button>J'aime</button>
-					</br>
-					</br>	
+						<table>
+							<tr>
+								<td>
+									<div id="video">
+										<video width="640" height="360" controls="controls">
+											<source src="C:\Users\Jojo\Downloads\kit graphique(2)\kit graphique\video3.mp4" type="video/mp4" />
+										</video>
+									</div>
+								</td>
+								<td><textarea rows="23" cols="60">meh</textarea></td>
+							</tr>
+							<tr>
+								<td><button>J'aime</button></td>
+								<td><button>Proposer une traduction</button></td>
+							</tr>
+						</table>	
 					</br>
 					</br>
 					</br>

@@ -35,15 +35,22 @@
 						<h1>ぐでたまショートアニメ 第731話「ぐでたま名言集」（37放送）</h1>
 						<h2>Diffusé le 06/03/2017</h2>
 						<h3>Mars 2017</h3>
-						<video width="1280" height="720" controls="controls">
-							<source src="C:\Users\Jojo\Downloads\kit graphique(2)\kit graphique\video7.mp4" type="video/mp4" />
-						</video>
-						
-					</br>
-					</br>
-					<button>J'aime</button>
-					</br>
-					</br>	
+						<table>
+							<tr>
+								<td>
+									<div id="video">
+										<video width="640" height="360" controls="controls">
+											<source src="C:\Users\Jojo\Downloads\kit graphique(2)\kit graphique\video7.mp4" type="video/mp4" />
+										</video>
+									</div>
+								</td>
+								<td><textarea rows="23" cols="60">meh</textarea></td>
+							</tr>
+							<tr>
+								<td><button>J'aime</button></td>
+								<td><button>Proposer une traduction</button></td>
+							</tr>
+						</table>
 					</br>
 					</br>
 					</br>

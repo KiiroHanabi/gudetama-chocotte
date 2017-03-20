@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class table="utilisateur" lazy="false" name="metier.Utilisateur">
+		<id name="id" type="int" column="idUtilisateur">
+			<generator class="increment"/>
+		</id>
+		<property name="login" type="string" column="login"/>
+		<property name="email" type="string" column="email"/>
+		<property name="mdp" type="string" column="mdp"/>
+		<property name="statut" type="string" column="statut"/>
+	</class>
+</hibernate-mapping>

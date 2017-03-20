@@ -1,15 +1,15 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Gestion des Videos</title>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <script type="text/javascript">
 	function confirmer(url) {
-		var rep=confirm("Etes vous sûr(e) de vouloir supprimer ?");
+		var rep=confirm("Etes vous sÃ»r(e) de vouloir supprimer ?");
 		if(rep==true) {
 			document.location=url;
 		}
@@ -21,16 +21,16 @@
 		<form action = "controleurvideo.php" method ="post">
 			<table>
 				<tr>
-					<td> MotClé :</td>
+					<td> MotClÃ© :</td>
 					<td><input type="text" name="motCle" value=${model.motCle}/></td>
-					<td><input type="submit" value="chercher" name="action"/></td>
+					<td><input type="submit" value="Rechercher" name="action"/></td>
 				</tr>
 			</table>
 		</form>
 	</div>
 		<div>
 		<form action = "controleurvideo.php" method ="post">
-		<input type="hidden" value="${model.mode}" name="mode">
+		<input type="hidden" value="${model.mode}" name="mode"/>
 			<table>
 			<c:if test="${model.mode=='ajout'}">
 				<tr>

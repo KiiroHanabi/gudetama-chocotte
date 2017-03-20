@@ -44,15 +44,15 @@
 										</video>
 									</div>
 								</td>
-								<td><textarea rows="23" cols="60">meh</textarea></td>
+								<td><textarea rows="23" cols="60"></textarea></td>
 							</tr>
 							<tr>
 								<td><button>J'aime</button></td>
 								<td>
-									<form action="uploadTraduction" method="post" enctype="multipart/form-data">
-						                <input type="file" name="file"/>
+									<form action="" method="post" enctype="multipart/form-data">
+						                <input type="file" name="file">
 						                <input type="submit" value="Proposer une traduction"/>
-	            					</form>   
+	            					</form>
 								</td>
 							</tr>
 						</table>

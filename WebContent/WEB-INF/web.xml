@@ -63,6 +63,6 @@
 	
 	<servlet-mapping>
 		<servlet-name>controleurservletaccueil</servlet-name>
-		<url-pattern>/controleureaccueil.php</url-pattern>
+		<url-pattern>/controleuraccueil.php</url-pattern>
 	</servlet-mapping>
 </web-app>

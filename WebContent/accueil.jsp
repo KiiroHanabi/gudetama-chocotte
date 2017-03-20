@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" >
 	<head>
@@ -60,6 +61,7 @@
 			<div id="banniere"><div id="logo"></div>
 			<div id="search">
 			<form id="searchthis" action = "controleuraccueil.php" method ="post">
+			<input type="hidden" value="${model.mode}" name="mode">
 			<table>
 				<tr>
 					<td></td>
@@ -146,24 +148,25 @@
 						<!-- Fin de la zone de texte -->
 
 					</div></div>
+					
 					<div>
 					<table class="table1">
 						<tr>
-							<th>Video</th><th>Date</th><th>URL</th><th>Duree</th>
+							<th>ID</th><th>Video</th><th>Date</th><th>URL</th><th>Duree</th><th>ID traduction</th>
 						</tr>
 						<c:forEach items="${model.videos}" var="v">
 							<tr>
+								<td>${v.idVideo}</td>
 								<td>${v.titreVideo}</td>
 								<td>${v.dateVideo}</td>
-								<td>${v.urlVideo}</td>
-								<!-- <td></td><video width="1280" height="720" controls="controls">
-										<source src="${v.urlVideo}" type="video/mp4" />
-								</video></td>-->
-								<td>${v.dureeVideo}</td>
+								<!-- <td>${v.urlVideo}</td>-->
+								<td><a href=${v.nomJSPVideo}>cliquez ici pour voir la vidéo</a></td> <!-- AJOUTER UN NOMJSPVIDEO -->
+								<td>${v.dureeVideo}</td>			
+								<td>${v.idTraduction}</td>
 							</tr>
 						</c:forEach>
 					</table>
-					</div> 
+		</div> 
 
 					<div id="clear_both"></div>
 

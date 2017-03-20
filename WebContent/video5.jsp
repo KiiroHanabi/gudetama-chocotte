@@ -48,7 +48,12 @@
 							</tr>
 							<tr>
 								<td><button>J'aime</button></td>
-								<td><button>Proposer une traduction</button></td>
+								<td>
+									<form action="uploadTraduction" method="post" enctype="multipart/form-data">
+						                <input type="file" name="file"/>
+						                <input type="submit" value="Proposer une traduction"/>
+	            					</form>
+	            				</td>
 							</tr>
 						</table>	
 					</br>

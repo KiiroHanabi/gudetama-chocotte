@@ -93,7 +93,7 @@ function verifMail(champ){
 							
 							</br>
 							</br>
-							<p><input type="submit" name="action" value="valider"></p>
+							<p><input type="submit" name="action" value="Envoyer"></p>
 							</form>
 							<button><a href="connexion.jsp">Se connecter</a></button>
 						<div class="bottom_MV"></div>

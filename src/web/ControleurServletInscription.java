@@ -28,7 +28,7 @@ public class ControleurServletInscription extends HttpServlet {
 		request.setAttribute("model",model);
 		String action=request.getParameter("action");	
 		if(action!=null){
-			if(action.equals("valider")) {
+			if(action.equals("Envoyer")) {
 				try {
 					//int id = Integer.parseInt("");
 					//model.getUtilisateur().setId(id);

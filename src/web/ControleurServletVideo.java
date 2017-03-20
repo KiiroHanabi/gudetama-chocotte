@@ -28,26 +28,16 @@ public class ControleurServletVideo extends HttpServlet {
 	protected void doGet( HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException {
 		doPost(request,  response);
 	}
-	// doute sur le nom de la liste et utilisateursParMC -> 1:00:00 de la vidéo environ
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException {
 		VideoModel model = new VideoModel();
 		request.setAttribute("model",model);
-		/*model.setMotCle(request.getParameter("motCle"));
-		List<Utilisateur> utilisateurs=metier.listUtilisateurMC(model.getMotCle());
-		model.setUtilisateurs(utilisateurs);
-		request.setAttribute("model",model);
-		request.getRequestDispatcher("vueUtilisateur.jsp").forward(request, response);*/
 		String action=request.getParameter("action");	
 		if(action!=null){
 			if(action.equals("chercher")){
 				model.setMotCle(request.getParameter("motCle"));
 				List<Video> videos=metier.listVideoMC(model.getMotCle());
 				model.setVideos(videos);
-				
-				//request.setAttribute("mod", model);
-				//request.getRequestDispatcher("vueUtilisateur.jsp").forward(request, response);
 			}
-			// doute sur le nom de l'action.est-ce vraiment delete ?
 			else if(action.equals("delete")){
 				int id=Integer.parseInt(request.getParameter("ref"));
 				metier.suppVideo(id);
@@ -70,7 +60,6 @@ public class ControleurServletVideo extends HttpServlet {
 					model.getVideo().setUrlVideo(request.getParameter("urlVideo"));
 					DateFormat formatter = new SimpleDateFormat("HH:mm");
 					java.sql.Time timeValue = new java.sql.Time(formatter.parse(request.getParameter("dureeVideo")).getTime());
-					//model.getVideo().setDureeVideo(request.getParameter("dureeVideo"));
 					model.getVideo().setDureeVideo(timeValue);
 					model.getVideo().setIdTraduction(Integer.parseInt(request.getParameter("idTraduction")));
 					model.setMode(request.getParameter("mode"));
@@ -85,5 +74,5 @@ public class ControleurServletVideo extends HttpServlet {
 			}
 		}
 		request.getRequestDispatcher("vueVideos.jsp").forward(request,response);
-	} //1:37:40 2-JEE: Bases du Développement Web...
+	}
 }

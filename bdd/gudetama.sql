@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Lun 20 Mars 2017 à 10:47
+-- Généré le :  Lun 20 Mars 2017 à 16:06
 -- Version du serveur :  5.6.17
 -- Version de PHP :  5.5.12
 
@@ -80,7 +80,7 @@ CREATE TABLE IF NOT EXISTS `utilisateur` (
   `mdp` varchar(45) NOT NULL,
   `statut` varchar(45) NOT NULL,
   PRIMARY KEY (`idUtilisateur`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=8 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=12 ;
 
 --
 -- Contenu de la table `utilisateur`
@@ -122,28 +122,29 @@ CREATE TABLE IF NOT EXISTS `video` (
   `idVideo` int(11) NOT NULL AUTO_INCREMENT,
   `titreVideo` varchar(45) NOT NULL,
   `dateVideo` date NOT NULL,
-  `urlVideo` varchar(100) NOT NULL,
+  `urlVideo` varchar(500) NOT NULL,
   `dureeVideo` time NOT NULL,
   `idTraduction` int(11) DEFAULT NULL,
+  `pageJsp` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`idVideo`),
   KEY `idTraduction` (`idTraduction`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=6 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=11 ;
 
 --
 -- Contenu de la table `video`
 --
 
-INSERT INTO `video` (`idVideo`, `titreVideo`, `dateVideo`, `urlVideo`, `dureeVideo`, `idTraduction`) VALUES
-(1, 'ぐでたまショートアニメ 第717話「フラッシュモブ」（215放送）', '2017-02-14', 'C:\\Users\\Jojo\\Desktop\\VidGudetama\\ぐでたまショートアニメ 第717話「フラッシュモブ」（215放送）.mp4', '00:01:00', NULL),
-(2, 'ぐでたまショートアニメ 第718話「あっちっち」（216放送）', '2017-02-15', 'C:\\Users\\Jojo\\Desktop\\VidGudetama\\ぐでたまショートアニメ 第718話「あっちっち」（216放送）.mp4', '00:01:00', NULL),
-(3, 'ぐでたまショートアニメ 第719話「もしもぐでたま マンガ家」（217放送）', '2017-02-16', 'C:\\Users\\Jojo\\Desktop\\VidGudetama\\ぐでたまショートアニメ 第719話「もしもぐでたま マンガ家」（217放送）.mp4', '00:01:00', NULL),
-(4, 'ぐでたまショートアニメ 第720話「子守唄」（220放送）', '2017-02-19', 'C:\\Users\\Jojo\\Desktop\\VidGudetama\\ぐでたまショートアニメ 第720話「子守唄」（220放送）.mp4', '00:01:00', NULL),
-(5, 'ぐでたまショートアニメ 第721話「飼い主とペット」（221放送）', '2017-02-20', 'C:\\Users\\Jojo\\Desktop\\VidGudetama\\ぐでたまショートアニメ 第721話「飼い主とペット」（221放送）.mp4', '00:01:00', NULL),
-(6, 'ぐでたまショートアニメ 第730話「フライング」（36放送）', '2017-03-05', 'C:\\Users\\Jojo\\Desktop\\VidGudetama\\ぐでたまショートアニメ 第730話「フライング」（36放送）.mp4', '00:01:00', NULL),
-(7, 'ぐでたまショートアニメ 第731話「ぐでたま名言集」（37放送）', '2017-03-06', 'C:\\Users\\Jojo\\Desktop\\VidGudetama\\ぐでたまショートアニメ 第731話「ぐでたま名言集」（37放送）.mp4', '00:01:00', NULL),
-(8, 'ぐでたまショートアニメ 第732話「黄身の名は」（38放送）', '2017-03-07', 'C:\\Users\\Jojo\\Desktop\\VidGudetama\\ぐでたまショートアニメ 第732話「黄身の名は」（38放送）.mp4', '00:01:00', NULL),
-(9, 'ぐでたまショートアニメ 第733話「もしもぐでたま 声優」（39放送）', '2017-03-08', 'C:\\Users\\Jojo\\Desktop\\VidGudetama\\ぐでたまショートアニメ 第733話「もしもぐでたま 声優」（39放送）.mp4', '00:01:00', NULL),
-(10, 'ぐでたまショートアニメ 第734話「しりに…」（310放送）', '2017-03-09', 'C:\\Users\\Jojo\\Desktop\\VidGudetama\\ぐでたまショートアニメ 第734話「しりに…」（310放送）.mp4', '00:01:00', NULL);
+INSERT INTO `video` (`idVideo`, `titreVideo`, `dateVideo`, `urlVideo`, `dureeVideo`, `idTraduction`, `pageJsp`) VALUES
+(1, 'ぐでたまショートアニメ 第717話「フラッシュモブ」（215放送）', '2017-02-14', 'C:\\VideosGudetama\\ぐでたまショートアニメ 第717話「フラッシュモブ」（215放送）.mp4', '00:01:00', NULL, 'video1.jsp'),
+(2, 'ぐでたまショートアニメ 第718話「あっちっち」（216放送）', '2017-02-15', 'C:\\VideosGudetama\\ぐでたまショートアニメ 第718話「あっちっち」（216放送）.mp4', '00:01:00', NULL, 'video2.jsp'),
+(3, 'ぐでたまショートアニメ 第719話「もしもぐでたま マンガ家」（217放送）', '2017-02-16', 'C:\\VideosGudetama\\ぐでたまショートアニメ 第719話「もしもぐでたま マンガ家」（217放送）.mp4', '00:01:00', NULL, 'video3.jsp'),
+(4, 'ぐでたまショートアニメ 第720話「子守唄」（220放送）', '2017-02-19', 'C:\\VideosGudetama\\ぐでたまショートアニメ 第720話「子守唄」（220放送）.mp4', '00:01:00', NULL, 'video4.jsp'),
+(5, 'ぐでたまショートアニメ 第721話「飼い主とペット」（221放送）', '2017-02-20', 'C:\\VideosGudetama\\ぐでたまショートアニメ 第721話「飼い主とペット」（221放送）.mp4', '00:01:00', NULL, 'video5.jsp'),
+(6, 'ぐでたまショートアニメ 第730話「フライング」（36放送）', '2017-03-05', 'C:\\VideosGudetama\\ぐでたまショートアニメ 第730話「フライング」（36放送）.mp4', '00:01:00', NULL, 'video6.jsp'),
+(7, 'ぐでたまショートアニメ 第731話「ぐでたま名言集」（37放送）', '2017-03-06', 'C:\\VideosGudetama\\ぐでたまショートアニメ 第731話「ぐでたま名言集」（37放送）.mp4', '00:01:00', NULL, 'video7.jsp\r\n'),
+(8, 'ぐでたまショートアニメ 第732話「黄身の名は」（38放送）', '2017-03-07', 'C:\\VideoGudetama\\ぐでたまショートアニメ 第732話「黄身の名は」（38放送）.mp4', '00:01:00', NULL, 'video8.jsp'),
+(9, 'ぐでたまショートアニメ 第733話「もしもぐでたま 声優」（39放送）', '2017-03-08', 'C:\\VideosGudetama\\ぐでたまショートアニメ 第733話「もしもぐでたま 声優」（39放送）.mp4', '00:01:00', NULL, 'video9.jsp'),
+(10, 'ぐでたまショートアニメ 第734話「しりに…」（310放送）', '2017-03-09', 'C:\\VideosGudetama\\ぐでたまショートアニメ 第734話「しりに…」（310放送）.mp4', '00:01:00', NULL, 'video10.jsp');
 
 --
 -- Contraintes pour les tables exportées
@@ -153,8 +154,20 @@ INSERT INTO `video` (`idVideo`, `titreVideo`, `dateVideo`, `urlVideo`, `dureeVid
 -- Contraintes pour la table `favoris`
 --
 ALTER TABLE `favoris`
-  ADD CONSTRAINT `fk_favoris_idUtilisateur` FOREIGN KEY (`idUtilisateur`) REFERENCES `utilisateur` (`idUtilisateur`),
-  ADD CONSTRAINT `fk_favoris_idVideo` FOREIGN KEY (`idVideo`) REFERENCES `video` (`idVideo`);
+  ADD CONSTRAINT `fk_constraint_idVideoFavoris` FOREIGN KEY (`idVideo`) REFERENCES `video` (`idVideo`),
+  ADD CONSTRAINT `fk_constraint_idUtilisateurFavoris` FOREIGN KEY (`idUtilisateur`) REFERENCES `utilisateur` (`idUtilisateur`);
+
+--
+-- Contraintes pour la table `traduction`
+--
+ALTER TABLE `traduction`
+  ADD CONSTRAINT `fk_constraint_idUtilisateurTraduction` FOREIGN KEY (`idUtilisateur`) REFERENCES `utilisateur` (`idUtilisateur`);
+
+--
+-- Contraintes pour la table `video`
+--
+ALTER TABLE `video`
+  ADD CONSTRAINT `fk_constraint_idTraductionVideo` FOREIGN KEY (`idTraduction`) REFERENCES `traduction` (`idTraduction`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

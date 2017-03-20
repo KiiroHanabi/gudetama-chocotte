@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class table="video" lazy="false" name="metier.Video">
+		<id name="id" type="int" column="idVideo">
+			<generator class="increment"/>
+		</id>
+		<property name="titreVideo" type="string" column="titreVideo"/>
+		<property name="dateVideo" type="date" column="dateVideo"/>
+		<property name="urlVideo" type="string" column="urlVideo"/>
+		<property name="dureeVideo" type="time" column="dureeVideo"/>
+		<property name="idTraduction" type="int" column="idTraduction"/>
+		<property name="pageJsp" type="string" column="pageJsp"/>
+	</class>
+</hibernate-mapping>

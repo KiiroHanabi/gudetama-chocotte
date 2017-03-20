@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class table="utilisateur" lazy="false" name="metier.Traduction">
+		<id name="id" type="int" column="idTraduction">
+			<generator class="increment"/>
+		</id>
+		<property name="idUtilisateur" type="int" column="idUtilisateur"/>
+		<property name="urlTraduction" type="string" column="urlTraduction"/>
+		<property name="votePositif" type="int" column="votePositif"/>
+		<property name="voteNegatif" type="int" column="voteNegatif"/>
+		<property name="totalVote" type="int" column="totalVote"/>
+	</class>
+</hibernate-mapping>

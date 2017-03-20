@@ -23,6 +23,8 @@
 		<property name="hbm2ddl.auto">update</property>
 		
 		<mapping resource="hibernate/utilisateur.hbm.xml"/>
+		<mapping resource="hibernate/video.hbm.xml"/>
+		<mapping resource="hibernate/traduction.hbm.xml"/>
 
 	</session-factory>
 </hibernate-configuration>

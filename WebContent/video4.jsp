@@ -57,9 +57,22 @@
 						<h1>ぐでたまショートアニメ 第720話「子守唄」（2/20放送）</h1>
 						<h2>Diffusé le 19/02/2017</h2>
 						<h3>Février 2017</h3>
-						<video width="1280" height="720" controls="controls">
-							<source src="C:\Users\Jojo\Downloads\kit graphique(2)\kit graphique\video4.mp4" type="video/mp4" />
-						</video>
+						<table>
+							<tr>
+								<td>
+									<div id="video">
+										<video width="640" height="360" controls="controls">
+											<source src="C:\Users\Jojo\Downloads\kit graphique(2)\kit graphique\video4.mp4" type="video/mp4" />
+										</video>
+									</div>
+								</td>
+								<td><textarea rows="23" cols="60">meh</textarea></td>
+							</tr>
+							<tr>
+								<td><button>J'aime</button></td>
+								<td><button>Proposer une traduction</button></td>
+							</tr>
+						</table>
 						<!--<video controls preload><source src="ぐでたまショートアニメ 第720話「子守唄」（220放送）.ogv" type="video/ogg"/></video>
 						<!--Votre design est enfin prêt à être utilisé. Ouvrez cette page avec un éditeur de texte afin de la modifier à votre convenance.
 						Si vous ne parvenez pas à modifier votre design comme vous le voudriez, nous vous conseillons de suivre 

@@ -57,9 +57,22 @@
 						<h1>ぐでたまショートアニメ 第721話「飼い主とペット」（2/21放送）</h1>
 						<h2>Diffusé le 20/02/2017</h2>
 						<h3>Février 2017</h3>
-						<video width="1280" height="720" controls="controls">
-							<source src="C:\Users\Jojo\Downloads\kit graphique(2)\kit graphique\video5.mp4" type="video/mp4" />
-						</video>
+						<table>
+							<tr>
+								<td>
+									<div id="video">
+										<video width="640" height="360" controls="controls">
+											<source src="C:\Users\Jojo\Downloads\kit graphique(2)\kit graphique\video5.mp4" type="video/mp4" />
+										</video>
+									</div>
+								</td>
+								<td><textarea rows="23" cols="60">meh</textarea></td>
+							</tr>
+							<tr>
+								<td><button>J'aime</button></td>
+								<td><button>Proposer une traduction</button></td>
+							</tr>
+						</table>
 						<!--<video controls preload><source src="ぐでたまショートアニメ 第721話「飼い主とペット」（221放送）.ogv" type="video/ogg"/></video>
 						<!--Votre design est enfin prêt à être utilisé. Ouvrez cette page avec un éditeur de texte afin de la modifier à votre convenance.
 						Si vous ne parvenez pas à modifier votre design comme vous le voudriez, nous vous conseillons de suivre 

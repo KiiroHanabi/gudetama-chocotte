@@ -95,6 +95,7 @@ public class ModifVideoImpl implements IModifVideo {
 			ps.setString(2, "%"+mc+"%");
 			ps.setString(3, "%"+mc+"%");
 			ps.setString(4, "%"+mc+"%");
+			ps.setString(5, "%"+mc+"%");
 			ResultSet rs = ps.executeQuery();
 			while(rs.next()){
 				Video v = new Video();

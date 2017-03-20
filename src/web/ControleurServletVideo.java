@@ -61,8 +61,8 @@ public class ControleurServletVideo extends HttpServlet {
 					DateFormat formatter = new SimpleDateFormat("HH:mm");
 					java.sql.Time timeValue = new java.sql.Time(formatter.parse(request.getParameter("dureeVideo")).getTime());
 					model.getVideo().setDureeVideo(timeValue);
-					model.getVideo().setPageJsp(request.getParameter("pageJsp"));
 					model.getVideo().setIdTraduction(Integer.parseInt(request.getParameter("idTraduction")));
+					model.getVideo().setPageJsp(request.getParameter("pageJsp"));
 					model.setMode(request.getParameter("mode"));
 					if(model.getMode().equals("ajout"))
 						metier.addVideo(model.getVideo());

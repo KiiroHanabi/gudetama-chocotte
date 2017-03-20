@@ -68,13 +68,13 @@
 					<td></td>
 				</tr>
 				<tr>
-					<td>Page JSP :</td>
-					<td><input type="time" name="pageJsp" value="${model.video.pageJsp}"/></td>
+					<td>ID traduction :</td>
+					<td><input type="number" name="idTraduction" value="${model.video.idTraduction}"/></td>
 					<td></td>
 				</tr>
 				<tr>
-					<td>ID traduction :</td>
-					<td><input type="number" name="idTraduction" value="${model.video.idTraduction}"/></td>
+					<td>Page JSP :</td>
+					<td><input type="text" name="pageJsp" value="${model.video.pageJsp}"/></td>
 					<td></td>
 				</tr>
 				<tr>

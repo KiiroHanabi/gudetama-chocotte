@@ -150,19 +150,25 @@
 					</div></div>
 					
 					<div>
+					<table><tr><td></td><td></td></tr></table>
 					<table class="table1">
 						<tr>
-							<th>ID</th><th>Video</th><th>Date</th><th>URL</th><th>Duree</th><th>ID traduction</th>
+							<th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th>Video</th><th></th><th></th><th></th><th>Date</th><th></th><th></th><th></th><th>Duree</th><th></th><th></th><th></th><th>Lien</th>
 						</tr>
 						<c:forEach items="${model.videos}" var="v">
 							<tr>
-								<td>${v.idVideo}</td>
+								<!-- <td>${v.idVideo}</td>-->
+								<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 								<td>${v.titreVideo}</td>
+								<td></td><td></td><td></td>
 								<td>${v.dateVideo}</td>
+								<td></td><td></td><td></td>
 								<!-- <td>${v.urlVideo}</td>-->
+								<td>${v.dureeVideo}</td>
+								<td></td><td></td><td></td>		
+								<!-- <td>${v.idTraduction}</td>-->
+								<!-- <td>${v.pageJsp}</td>-->
 								<td><a href=${v.pageJsp}>Voir vidéo</a></td>
-								<td>${v.dureeVideo}</td>			
-								<td>${v.idTraduction}</td>
 							</tr>
 						</c:forEach>
 					</table>

@@ -18,8 +18,8 @@
 				<ul id="MH">
 				<li><a href="index.jsp">Accueil</a></li>
 				<li><a href="connexion.jsp">Connexion</a></li>
-				<!--<li><a href="#">Menu 3</a></li>
-				<li><a href="#">Menu 4</a></li>-->
+				<li><a href="inscription.jsp">Inscription</a></li>
+				<li><a href="interface.jsp">Admin</a></li>
 			</ul>
 			<!-- Fin du menu horizontal -->
 
@@ -29,28 +29,6 @@
 
 -->				<div id="corps">
 
-					<!-- Début du menu vertical -->
-<!--					<div id="MV">
-						<div class="en_tete_MV">Séries</div>
-							<a class="lien_MV">Noël 2016</a>
-							<a class="lien_MV">Eté 2016</a>
-							<a class="lien_MV">Noël 2015</a>
-							<a class="lien_MV">Eté 2015</a>
-							<!--<a class="lien_MV">Menu 5</a>
-							<a class="lien_MV">Menu 6</a>-->
-<!--						<div class="bottom_MV"></div>
-						<div class="marge_MV"></div>
-						<div class="en_tete_MV">Autres</div>
-							<a class="lien_MV">Nouveautés</a>
-							<a class="lien_MV">Fan pages</a>
-							<a class="lien_MV">Qui sommes-nous</a>
-							<!--<a class="lien_MV">Menu 4</a>
-							<a class="lien_MV">Menu 5</a>
-							<a class="lien_MV">Menu 6</a>-->
-<!--						<div class="bottom_MV"></div>
-						<div class="marge_MV"></div>
-					</div>
-					<!-- Fin du menu vertical -->
 
 					<div id="texte"><div id="overflow">
 
@@ -115,14 +93,9 @@
 
 
 		<div id="pied_de_page">
-			<a href="http://www.creer-son-website.fr">Gudetama-Chocotte</a>
+			<a href="quisommesnous.jsp">Gudetama-Chocotte</a>
 		</div>
 
 
 	</body>
 </html>
-
-<!-- 
-Entrez ce lien à tout moment dans la barre d'adresse pour recharger votre design :
-http://www.creer-son-website.fr/chargement_kit.php?clef=PDKDV
--->tml>

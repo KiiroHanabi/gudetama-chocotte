@@ -17,8 +17,8 @@
 			<ul id="MH">
 				<li><a href="index.jsp">Accueil</a></li>
 				<li><a href="connexion.jsp">Connexion</a></li>
-				<!--<li><a href="#">Menu 3</a></li>
-				<li><a href="#">Menu 4</a></li>-->
+				<li><a href="inscription.jsp">Inscription</a></li>
+				<li><a href="interface.jsp">Admin</a></li>
 			</ul>
 
 			<div id="CHG"></div><div id="CHD"></div><div id="BH"></div>

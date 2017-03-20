@@ -1,0 +1,311 @@
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////       BACKGROUND        ///////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+
+html, body
+{
+	height : 100%;
+	margin : 0px;
+	padding : 0px;
+}
+
+html
+{
+	background-color : #FFFFFF;
+	font-family : "Trebuchet MS" , sans-serif;
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////    STRUCTURE GLOBALE    ///////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+
+#conteneur_1
+{
+	min-height : 100%;
+}
+
+#conteneur_2
+{
+	width : 100%;
+	min-width : 600px;
+	margin : auto;
+	padding-bottom : 169px;
+}
+
+#corps
+{
+	width : 100%;
+	color : #000000;
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////        BANNIERE        ////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+
+#banniere
+{
+	height : 300px;
+	background : url("banniere.png") top left;
+	overflow : hidden;
+	position : relative;
+}
+
+#search
+{
+	margin-top : 10px;
+	margin-left : 1150px;
+}
+
+#searchthis
+{
+	width : 350px;
+	background-color: #222222;   /* Couleur de fond */
+	border-style: solid;   /* Style de la bordure  */
+	border-width: 2px;   /* Epaisseur de la bordure  */
+	border-radius: 10px;
+	border-color: #000000;   /* Couleur de la bordure  */
+}
+
+#searchthis input
+{
+	border-radius : 10px;
+}
+
+#searchthis #searchbar
+{
+background-color: #ffffff;   /* Couleur de fond */
+  border-style: solid;   /* Style de la bordure  */
+  border-width: 1px;   /* Epaisseur de la bordure  */
+  border-color: #dddddd;   /* Couleur de la bordure  */
+  border-radius : 0px;
+  padding: 3px 5px 3px 5px;   /* Espace entre les bords et le contenu : haut droite bas gauche  */
+  width: 98.5%;   /* Permet d'ajuster la largeur du champ de saisie à 100% */
+  box-sizing: border-box;   /* Important */
+  font-size: 12px;   /* Taille de la police du texte */
+  font-weight: normal;   /* Graisse du texte : normal = normal ; bold = gras */
+  letter-spacing: 1px;   /* Espacement des caractères */
+}
+
+#searchthis #searchbutt:hover {
+  background-color: #D1D1D1;   /* Couleur de fond */
+  color: #000000;   /* Couleur du texte */
+  cursor: pointer;   /* Apparence du curseur comme pour un lien */
+}
+
+#searchthis #searchbutt
+{
+	background-color: #000000;   /* Couleur de fond */
+  border-style: solid;   /* Style de la bordure  */
+  border-width: 2px;   /* Epaisseur de la bordure  */
+  border-color: #333333;   /* Couleur de la bordure  */
+  border-radius: 10px;
+  padding: 5px 10px 5px 10px;   /* Espace entre les bords et le contenu : haut droite bas gauche  */
+  width: 98.5%;   /* Permet d'ajuster la largeur du bouton à 100% */
+  box-sizing: border-box;   /* Important */
+  font-size: 13px;   /* Taille de la police du texte */
+  font-weight: bold;   /* Graisse du texte : normal = normal ; bold = gras */
+  color: #D1D1D1;   /* Couleur du texte */
+}
+
+#searchthis td
+{
+	font-size: 13px;   /* Taille de la police du texte */
+  font-weight: bold;   /* Graisse du texte : normal = normal ; bold = gras */
+  color: #D1D1D1;   /* Couleur du texte */
+}
+
+#logo
+{
+	width : 300px;
+	height : 190px;
+	background : url("gudetama.png");
+	float : left;
+	position : relative;
+	left : 50px;
+	top : 10px;
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////          TEXTE          ///////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+
+#texte 
+{
+	padding : 20px;
+	margin-left : 215px;
+	text-align : justify;
+	font-size : 15px;
+}
+
+p
+{
+	margin-top : 0px;
+}
+
+h1
+{
+	font-size : 19px;
+	margin-top : 0px;
+}
+
+h2
+{
+	font-size : 16px;
+	margin-top : 0px;
+}
+		
+a
+{
+	color : #288de8;
+	text-decoration : none;
+}
+
+a:hover
+{
+	color : #ff8000;
+}
+
+#overflow
+{
+	overflow : hidden;
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////     MENU HORIZONTAL     ///////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+
+#MH
+{
+	height : 35px;
+	background : url("MH.png");
+	margin : 0px;
+	padding : 0px;
+	text-align : left;
+}
+
+#MH li
+{
+	display : inline;
+	margin-right:0px;
+	margin-left:-6px;
+	text-align : center;
+}
+
+#MH a
+{
+	display : inline-block;
+	margin : 0px;
+	height : 27px;
+	padding-top : 8px;
+	padding-left :20px;
+	padding-right :20px;
+	vertical-align:top;
+	text-decoration : none;
+	font-size : 14px;
+	font-weight : bold;
+}
+
+#MH li a
+{
+	color : #FFFFFF;
+}
+
+#MH li a:hover
+{
+	background : url("MH_hover.png");
+	color : #c8c8c8;
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////     MENU VERTICAL     ////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+
+#MV
+{
+	width : 200px;
+	float : left;
+	text-align : center;
+	margin-top : 20px;
+	margin-left : 6px;
+}
+
+.marge_MV
+{
+	height : 20px;
+}
+
+.en_tete_MV
+{
+	width : 200px;
+	height : 23px;
+	padding-top : 4px;
+	background : url("en_tete_MV.png") no-repeat;
+	text-align : center;
+	padding-left:0px;
+	padding-right:0px;
+	margin : 0px;
+	color : #D1D1D1;
+	font-size : 14px;
+	position:relative;
+}
+
+a.lien_MV
+{
+	width : 200px;
+	height : 25px;
+	padding-top : 5px;
+	background : url("bouton_MV.png") no-repeat;
+	padding-left:0px;
+	padding-right:0px;
+	text-align : center;
+	color : #424242;
+	font-size : 14px;
+	text-decoration : none;
+	display : block;
+}
+
+a.lien_MV:hover
+{
+	background : url("bouton_MV_hover.png") no-repeat;
+	color : #1E1E1E;
+}
+
+.bottom_MV
+{
+	width : 200px;
+	height : 17px;
+	position : relative;
+	background : url("bottom_MV.png") repeat-x;
+	margin : 0px;
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////       BAS DE PAGE       ///////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+
+#pied_de_page
+{
+	height : 93px;
+	background : url("pied_de_page.png") center;
+	margin-top : -169px;
+	min-width : 600px;
+	text-align : center;
+	padding-top : 76px;
+	color : #FFFFFF;
+}
+
+#pied_de_page a
+{
+	color : #FFFFFF;
+}
+
+#clear_both
+{
+	clear : both;
+}

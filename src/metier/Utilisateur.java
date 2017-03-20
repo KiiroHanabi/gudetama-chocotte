@@ -21,6 +21,16 @@ public class Utilisateur implements Serializable {
 		this.mdp = mdp;
 		this.statut = statut;
 	}
+	
+	public Utilisateur(String login, String email, String mdp) {
+		super();
+		this.id = Integer.parseInt("");
+		this.login = login;
+		this.email = email;
+		this.mdp = mdp;
+		this.statut = "Membre";
+	}
+	
 	public int getId() {
 		return id;
 	}

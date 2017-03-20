@@ -1,0 +1,277 @@
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////       BACKGROUND        ///////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+
+html, body
+{
+	height : 100%;
+	margin : 0px;
+	padding : 0px;
+}
+
+html
+{
+	background-color : #FFFFFF;
+	font-family : "Trebuchet MS" , sans-serif;
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////    STRUCTURE GLOBALE    ///////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+
+#conteneur_1
+{
+	min-height : 100%;
+}
+
+#conteneur_2
+{
+	width : 100%;
+	min-width : 600px;
+	margin : auto;
+	padding-bottom : 169px;
+}
+
+#corps
+{
+	width : 100%;
+	color : #000000;
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////        BANNIERE        ////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+
+#banniere
+{
+	height : 203px;
+	background : url("banniere.png") top left;
+	overflow : hidden;
+	position : relative;
+}
+
+#logo
+{
+	width : 300px;
+	height : 190px;
+	background : url("gudetama.png");
+	float : left;
+	position : relative;
+	left : 50px;
+	top : 10px;
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////          TEXTE          ///////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+
+#texte 
+{
+	padding : 20px;
+	margin-left : 215px;
+	text-align : justify;
+	font-size : 15px;
+}
+
+/*p
+
+{
+	margin-top : 0px;
+}*/
+
+
+h1
+{
+	font-size : 19px;
+	margin-top : 0px;
+}
+
+h2
+{
+	font-size : 16px;
+	margin-top : 0px;
+}
+		
+a
+{
+	color : #ffffff;
+	text-decoration : none;
+}
+
+a:hover
+{
+	color : #ffb200;
+}
+
+#overflow
+{
+	overflow : hidden;
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////     MENU HORIZONTAL     ///////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+
+#MH
+{
+	height : 35px;
+	background : url("MH.png");
+	margin : 0px;
+	padding : 0px;
+	text-align : left;
+}
+
+#MH li
+{
+	display : inline;
+	margin-right:0px;
+	margin-left:-6px;
+	text-align : center;
+}
+
+#MH a
+{
+	display : inline-block;
+	margin : 0px;
+	height : 27px;
+	padding-top : 8px;
+	padding-left :20px;
+	padding-right :20px;
+	vertical-align:top;
+	text-decoration : none;
+	font-size : 14px;
+	font-weight : bold;
+}
+
+#MH li a
+{
+	color : #FFFFFF;
+}
+
+#MH li a:hover
+{
+	background : url("MH_hover.png");
+	color : #c8c8c8;
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////     MENU VERTICAL     ////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+
+#MV
+{
+	width : 400px;
+	float : left;
+	text-align : center;
+	margin-top : 20px;
+	margin-left : 6px;
+}
+
+.marge_MV
+{
+	height : 20px;
+}
+
+.en_tete_MV
+{
+/*	width : 400px;
+	height : 54px;*/
+	padding-top : 4px;
+	/*background : url("en_tete_MV2.png") no-repeat;*/
+	text-align : center;
+	padding-left:0px;
+	padding-right:0px;
+	margin : 0px;
+	color : #000000;
+	font-size : 30px;
+	font-weight:bold;
+	position:relative;
+}
+
+/*a.lien_MV*/
+p
+{
+/*	width : 200px;
+	height : 25px;
+	padding-top : 5px;
+	background : url("bouton_MV.png") no-repeat;
+	padding-left:0px;
+	padding-right:0px;*/
+	text-align : center;
+	color : #424242;
+	font-size : 18px;
+	text-decoration : none;
+	margin-bottom:5px;
+	/*display : block;*/
+}
+
+h1{
+	width : 650px;
+	height : 30px;
+	text-align : left;
+}
+
+img
+{
+	margin-top : 0px;
+	margin-bottom : 100px;
+}
+
+/*a.lien_MV:hover
+{
+	background : url("bouton_MV_hover.png") no-repeat;
+	color : #1E1E1E;
+}*/
+
+
+.bottom_MV
+{
+	width : 400px;
+	height : 54px;
+	position : relative;
+	/*background : url("bottom_MV2.png") repeat-x;*/
+	margin-top : 15px;
+}
+
+button {
+    background-color: #303030; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+	border-radius: 4px;
+    /*display: inline-block;*/
+    font-size: 16px;
+
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////       BAS DE PAGE       ///////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+
+#pied_de_page
+{
+	height : 93px;
+	background : url("pied_de_page.png") center;
+	margin-top : -169px;
+	min-width : 600px;
+	text-align : center;
+	padding-top : 76px;
+	color : #FFFFFF;
+}
+
+#pied_de_page a
+{
+	color : #FFFFFF;
+}
+
+#clear_both
+{
+	clear : both;
+}

@@ -1,0 +1,32 @@
+#conteneur_2
+{
+	width : 100%;
+	width : expression((document.body.clientWidth<=602) ? '600px' : '100%');
+}
+#banniere{width : expression((document.body.clientWidth<=602) ? '600px' : 'auto');}
+#MH{width : expression((document.body.clientWidth<=602) ? '600px' : 'auto');}
+#pied_de_page{width : expression((document.body.clientWidth<=602) ? '600px' : 'auto');}
+
+#conteneur_1{height : 100%;}
+
+html{font-family : sans-serif;}
+#banniere, #MH, #MV, #texte, #pied_de_page{font-family : "Trebuchet MS" , sans-serif;}
+
+#overflow{width : 99%;}
+
+#MH li
+{
+	margin-left:0px;
+}
+
+.groupe_lien_MH
+{
+	display : inline;
+	margin-left:0px;
+}
+
+.sublien_MH
+{
+	height : 37px;
+	width : 120px;
+}

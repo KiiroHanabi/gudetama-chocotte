@@ -6,6 +6,61 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=ASCII" />
 		<link rel="stylesheet" media="screen" type="text/css" title="Design" href="css/design/style2.css" />
 		<!--[if IE 6]><link rel="stylesheet" media="screen" type="text/css" title="Design" href="design/ie6.css" /> <![endif]-->
+	
+			<script type="text/javascript">
+
+function surligne(champ, erreur){
+   if(erreur)
+   champ.style.backgroundColor = "#fba";
+  
+  else
+      champ.style.backgroundColor = "";
+}
+
+
+function verifLogin(champ){
+   if(champ.value.length < 2 || champ.value.length > 25)
+   {
+      surligne(champ, true);
+	  alert("indiquez votre login(entre 2 et 25 caractéres)");
+      return false;
+   }
+   else
+   {
+      surligne(champ, false);
+	        return true;
+   }
+}
+
+function verifMdp(champ){
+	if(champ.value.length < 2 || champ.value.length > 25)
+   {
+      surligne(champ, true);
+	  alert("indiquez votre mot de passe (entre 2 et 25 caractéres)");
+      return false;
+   }
+   else
+   {
+      surligne(champ, false);
+	        return true;
+   }
+}
+
+function verifMail(champ){
+   var regex = /^[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$/;
+   if(!regex.test(champ.value))
+   {
+      surligne(champ, true);
+	  alert("indiquez une adresse mail valide");
+      return false;
+   }
+   else
+   {
+      surligne(champ, false);
+      return true;
+   }
+}
+</script>
 	</head>
 
 	<body>
@@ -16,8 +71,8 @@
 			<ul id="MH">
 				<li><a href="index.jsp">Accueil</a></li>
 				<li><a href="connexion.jsp">Connexion</a></li>
-				<!--<li><a href="#">Menu 3</a></li>
-				<li><a href="#">Menu 4</a></li>-->
+				<li><a href="inscription.jsp">Inscription</a></li>
+				<li><a href="interface.jsp">Admin</a></li>
 			</ul>
 			<!-- Fin du menu horizontal -->
 
@@ -30,61 +85,25 @@
 					<!-- Début du menu vertical -->
 					<div id="MV">
 						<div class="en_tete_MV">Inscription</div>
-							<p>Login</p><textarea rows=1 cols=20></textarea>
-							<p>Email</p><textarea rows=1 cols=20></textarea>
-							<p>Mot de passe</p><textarea rows=1 cols=20></textarea>
-							<p>Confirmation mot de passe</p><textarea rows=1 cols=20></textarea>
+						<form method="post" action="controleurinscription.php">
+						<input type="hidden" value="${model.mode}" name="mode">
+							<p>Login</p><input type="text" name="login" value="${model.utilisateur.login}" onblur="verifLogin(this)"/>
+							<p>Email</p><input type="text" name="email" value="${model.utilisateur.email}" onblur="verifMail(this)"/></p>
+							<p>Mot de passe</p><input type="password" name="mdp" value="${model.utilisateur.mdp}" onblur="verifMdp(this);"/></p>
+							
 							</br>
 							</br>
-							<button><a href="accueil.jsp">Envoyer</a></button>
-<!--						<a class="lien_MV" href="video1.jsp">Noël 2016</a>
-							<a class="lien_MV">Eté 2016</a>
-							<a class="lien_MV">Noël 2015</a>
-							<a class="lien_MV">Eté 2015</a>
-							<!--<a class="lien_MV">Menu 5</a>
-							<a class="lien_MV">Menu 6</a>-->
+							<p><input type="submit" name="action" value="valider"></p>
+							</form>
+							<button><a href="connexion.jsp">Se connecter</a></button>
 						<div class="bottom_MV"></div>
-<!--						<div class="marge_MV"></div>
-						<div class="en_tete_MV">Autres</div>
-							<a class="lien_MV">Nouveautés</a>
-							<a class="lien_MV">Fan pages</a>
-							<a class="lien_MV">Qui sommes-nous</a>
-							<!--<a class="lien_MV">Menu 4</a>
-							<a class="lien_MV">Menu 5</a>
-							<a class="lien_MV">Menu 6</a>
-						<div class="bottom_MV"></div>-->
 						<div class="marge_MV"></div>
 					</div>
-					<!-- Fin du menu vertical -->
+					<div>
+					${model.errors}
+					</div>
 
 					<div id="texte"><div id="overflow">
-						<!-- Début de la zone de texte -->
-<!--						<p>
-						Il s'appelle Gudetama, et c'est l'un des personnages de la société Sanrio, à qui l'on doit Hello Kitty.</br>
-						? Flasque, jaune, endormi, Gudetama est en fait un étrange ouf flemmard inventé l'année dernière et dont le seul but est de ne rien faire de la journée et de se morfondre dans son blanc d'oeuf :D
-						<!--Votre design est enfin prêt à être utilisé. Ouvrez cette page avec un éditeur de texte afin de la modifier à votre convenance.
-						Si vous ne parvenez pas à modifier votre design comme vous le voudriez, nous vous conseillons de suivre 
-						<a href="http://www.creer-son-website.fr/tutoriel.php">ce tutoriel</a>.
-						Vous pouvez également poser des questions aux autres membres sur <a href="http://www.creer-son-website.fr/forum.php">le forum</a> en cas de problème.
-						</p>
-
-						<p>
-						Si vous le désirez, il vous est possible de continuer à travailler votre design en le 
-						<a href="http://www.creer-son-website.fr/chargement_kit.php?clef=PDKDV">rechargeant</a>.
-						Les designs créés avec Générakit sont sous license Créative Commons, et sont par conséquent soumis aux règles que nous rappelons ici.
-						Vous avez le droit de modifier manuellement votre design après son téléchargement afin de l'adapter à vos besoin et de vous en servir pour votre site.
-						La signature (lien en bas de page menant vers notre page d'accueil) n'est dans ce cas pas obligatoire, mais est toutefois activée par défaut.
-						La redistribution des designs créés avec Générakit est autorisée, mais vous devez dans ce cas respecter à la lettre les
-						<a href="http://www.creer-son-website.fr/conditions.php">conditions de redistribution</a> imposées. L'administrateur pourra s'il
-						le souhaite utiliser et redistribuer intégralement ou partiellement les designs créés, dans le but d'améliorer la qualité du service proposé.
-						</p>
-
-						<p>
-						Nous vous serions fortement reconnaissants si vous pouviez participer à la vie du <a href="http://www.creer-son-website.fr/forum.php">forum</a> et de la communauté.
-						Il est par exemple possible de montrer vos créations aux autres membres, de présenter votre projet et d'obtenir ainsi des conseils pour l'améliorer.
-						Nous mettons aussi à disposition sur demande des userbars et des bannières pour présenter Générakit sur d'autres forums si vous le désirez.-->
-<!--					</p><br />
-						<!-- Fin de la zone de texte -->
 
 					</br>
 					</br>
@@ -101,8 +120,7 @@
 
 			</div>
 
-		</div>
--->
+
 					
 		<div id="pied_de_page">
 			<!--<a >Hey coucou!</a>-->
@@ -110,8 +128,3 @@
 
 	</body>
 </html>
-
-<!-- 
-Entrez ce lien à tout moment dans la barre d'adresse pour recharger votre design :
-http://www.creer-son-website.fr/chargement_kit.php?clef=PDKDV
--->

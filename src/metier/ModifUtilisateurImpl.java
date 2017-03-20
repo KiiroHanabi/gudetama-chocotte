@@ -45,6 +45,7 @@ public class ModifUtilisateurImpl implements IModifUtilisateur {
 		}
 		
 	}
+	
 
 	@Override
 	public void suppUtilisateur(int id) {
